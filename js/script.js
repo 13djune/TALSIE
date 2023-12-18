@@ -22,7 +22,11 @@ function menu() {
 
 
     
-
+///////////POPUP/////////
+function ClosePopUp(){
+    var popUp = document.getElementById("popUp");
+    popUp.style.display = "none";
+}
 
 
 

@@ -87,58 +87,63 @@ header {
     background-color: transparent;
 }
 
+/* POPUP */
+#popUp{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6em;
+    border: 1px white solid;
+    border-radius: 80%;
+    width: 80vw;
+    z-index: 20;
+    box-shadow: rgba(255, 255, 255, 0.35) 10px 15px 15px;
+}
+#popUp>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+#popUp>div>a {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-family: var(--tipoGeneral);
+    color: rgb(255, 255, 255);
+}
 
-/* HEADER CARROUSEL*/
-/* .slideshow {
+#popUp>div>h2 {
+    color: white;
+    font-family: var(--tipoGeneral);
+    font-size: 3em;
+    text-align: center;
+}
+
+#popUp>div>form>div {
+    height: 4em;
+
+}
+
+#popUp>div>form>div>input {
+    width: 19em;
+    height: 2em;
+    border-radius: 2em;
+    color: rgba(255, 255, 255, 0.815);
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border: 1px white solid;
+}
+#popUp>div>form>input {
+   color: white;
+    border-radius: 2em;
     position: relative;
-    top: -10px;
-
-    overflow: hidden;
-    width: 100vw;
-    height: 90vh;
-    z-index: -2;
-    opacity: 0.8;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 15%);
+    padding: 0.5em;
+    border: 1px white solid;
 }
-
-.holder {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 10000vw;
-    height: 100vh;
-    transition: left 1s;
-}
-
-.holder div {
-    float: left;
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px 30px;
-}
-
-.slide-1 {
-    background-image: url(../img/);
-}
-
-.slide-2 {
-    background-image: url(../img/);
-}
-
-.slide-3 {
-    background-image: url(../img/);
-}
-
-.slide-4 {
-    background-image: url(../img/);
-}
-
-.slide-5 {
-    background-image: url(../img/);
-} */
-
 
 /* MENU */
 #envio>div{
@@ -316,7 +321,20 @@ a {
     width: 50px;
     transform: rotate(-45deg);
 }
-
+/* DUDAS */
+#dudas{
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#dudas>p{
+    font-family: 'EditorialNew-UltraLightItalic' ;
+    font-size: 0.8em;
+    color: white;
+    padding: 1em;
+}
 /* SECTIONS */
 section {
     width: 80%;
