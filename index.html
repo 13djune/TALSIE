@@ -41,7 +41,6 @@
             </form>
         </div>
         </div>
-
         <nav id="menu">
             <span class="hamburger" onclick="menu()"><span></span></span>
             <div id="envio">
@@ -52,9 +51,9 @@
                       España (EUR €)
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">USA (USD $)</a></li>
+                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">EE.UU (USD $)</a></li>
                       <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">Japan (JPY ¥)</a></li>
-                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">UK (GBP £)</a></li>
+                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">U.K (GBP £)</a></li>
                     </ul>
                   </div>
                   </div>
@@ -63,7 +62,7 @@
                 <li><a href="#joyas" onclick="closeMenu()">JOYAS</a></li>
                 <li><a href="#colecciones" onclick="closeMenu()">COLECCIONES</a></li>
                 <li><a href="#promociones" onclick="closeMenu()">PROMOCIONES</a></li>
-                <li><a href="#"><div id="logo"></div></a></li>
+                <li><div id="logo"></div></li>
                  <li><a href="#carrito" onclick="closeMenu()"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
                 <li><a href="#buscar" onclick="closeMenu()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
                 <li><a href="#cuenta" onclick="closeMenu()">CUENTA</a></li>
@@ -95,17 +94,57 @@
     </section>
        
 
-  <div id="dudas">
-      <p>¿dudas? chateemos</p>
-  </div>
-       
+  
+       <div id="dudas">
+           <p>¿dudas? chateemos</p>
+       </div>
    
 
 
 
 </body>
 <footer>
+<div>
+    <div id="footer_izq">
+        <div>
+            <h4>Información</h4>
+            <p>
+                Envío y devolución</p>
+                <p>Términos y condiciones</p>
+                <p>Política de privacidad</p>
+                <p>Cuidado de joyas</p>
+                <p>Blogs</p>
+                <p>Preguntas más frecuentes</p>
+                <p>Accesibilidad</p>
+            
+        </div>
+        <div>
+            <h4>Social</h4>
+                <p>Instagram</p>
+                <p>TikTok</p>
+                <p>Pinterest</p>
+                <p>Facebook</p>
+                <p>Recompensas</p>
+                <p>About Us</p>
+        </div>
 
+    </div>
+    <div id="footer_dcha">
+        <h4>Únete a la lista para obtener ofertas y actualizaciones exclusivas</h4>
+        <form>
+            <div id="mailForm">
+                <input type="email" value="Introduzca su email..."><br><br>
+            </div>
+            <div>
+                <input type="checkbox" id="privacidad" name="privacidad" value="Si">
+  <label for="privacidad">Al suscribirse, estoy de acuerdo con la Política de privacidad.</label>
+
+            </div>
+            <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter " onclick="ClosePopUp()">
+        </form>
+        
+    </div>
+</div>
 </footer>
 
 </html>
