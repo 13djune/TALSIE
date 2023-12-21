@@ -21,7 +21,10 @@ function menu() {
           });
 
 
-    
+          function ClosePopUp(){
+            var Popup = document.getElementById("popUp");
+            Popup.style.display = "none";
+        } 
 
 
 
