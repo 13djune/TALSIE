@@ -285,7 +285,7 @@ section>h1 {
     text-align: center;
     color: var(--colorClaro);
     font-size: 3em;
-    padding: 2em;
+    padding: 2em 0em 0.5em 0em;
     font-family: var(--tipoTitulos);
 }
 
@@ -298,8 +298,65 @@ section>p {
 
 
 
+
 /* ///////////////////////////// */
 
+/* SIRENAS SIRENAS SIRENAS */
+#elene{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#elene>div{
+    width: 50%;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-container>div{
+    padding: 5%;
+}
+.right-container>h2{
+    color: var(--colorClaro);
+    font-size: 20pt;
+    font-family: var(--tipoGeneral);
+}
+
+.boton{
+    border-radius: 50;
+    border-color: var(--color3);
+    border-width: 1px;
+    padding: 5%;
+}
+
+.boton>a{
+    font-family: var(--tipoGeneral);
+    color: var(--colorClaro);
+}
+
+.sirenpic>img{
+    height: 40%;
+}
+
+.container_collares{
+    display: flex;
+    flex-direction: column
+
+}
+
+.row{
+    padding: 0 0 5% 0;
+}
+
+.col>img{
+    width: 85%;
+}
+
+/* SIRENAS SIRENAS SIRENAS */
 
 
 
