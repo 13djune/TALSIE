@@ -305,10 +305,15 @@ section>p {
 #elene{
     display: flex;
     flex-direction: row;
+    max-height: 100vh;
 
 }
+#lyra{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
-#elene>div{
+.siren-colection>div{
     width: 50%;
 }
 
@@ -316,6 +321,7 @@ section>p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .right-container>div{
     padding: 5%;
@@ -335,7 +341,9 @@ section>p {
 }
 
 .boton:hover{
-    
+    scale: 110%;
+    box-shadow: 0 0 30px 15px #ffffff;
+    transition: .5s;
 }
 
 .boton>a{
@@ -344,7 +352,7 @@ section>p {
 }
 
 .sirenpic>img{
-    height: 40%;
+    height: 90%;
 }
 
 .container_collares{
@@ -359,6 +367,12 @@ section>p {
 
 .col>img{
     width: 85%;
+}
+
+.col>img:hover{
+    scale: 110%;
+    transition: .5s;
+    /* box-shadow: 0 0 15px 5px #ffffff; */
 }
 
 /* SIRENAS SIRENAS SIRENAS */
