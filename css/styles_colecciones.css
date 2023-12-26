@@ -468,3 +468,33 @@ section>p {
     color: var(--color4);
 
 }
+
+
+
+
+
+
+/* MEDIAQUERIES */
+@media only screen and (max-width: 1200px) {
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+}
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 400px) {
+
+}
