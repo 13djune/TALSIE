@@ -302,7 +302,7 @@ section>p {
 /* ///////////////////////////// */
 
 /* SIRENAS SIRENAS SIRENAS */
-#elene{
+#elene, #alexia{
     display: flex;
     flex-direction: row;
     max-height: 100vh;
