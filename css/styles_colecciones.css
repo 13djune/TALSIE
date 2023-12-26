@@ -311,10 +311,13 @@ section>p {
 #lyra{
     display: flex;
     flex-direction: row-reverse;
+    max-height: 100vh;
 }
 
 .siren-colection>div{
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .right-container{
