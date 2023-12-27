@@ -29,7 +29,7 @@ $(document).ready(function(){
     });
 
     $("#elene2").click(function(){
-        $(".cambio1").attr("src","img/ELENE/collarcorazon.pngg")
+        $(".cambio1").attr("src","img/ELENE/collarcorazon.png")
     });
 
     $("#elene3").click(function(){
@@ -37,7 +37,7 @@ $(document).ready(function(){
     });
 
     $("#elene4").click(function(){
-        $(".cambio1").attr("src","img/ELENE/collar lazo.png")
+        $(".cambio1").attr("src","img/ELENE/collarlazo.png")
     });
 
     $("#elene5").click(function(){
@@ -52,7 +52,7 @@ $(document).ready(function(){
     // LYRAAAAA LYRA LYRA
 
     $("#lyra1").click(function(){
-        $(".cambio2").attr("src","img/LYRa/lyra1.png")
+        $(".cambio2").attr("src","img/LYRa/lyra6.png")
     });
 
     $("#lyra2").click(function(){
