@@ -441,13 +441,19 @@ footer>div {
     border-color: white;
     border-image: initial;
 }
-#footer_dcha> form > input:hover {
-    box-shadow: inset 5px 5px 5px 5px rgba(255, 255, 255, 0.562);
+form > input:hover {
+    /* box-shadow: inset 5px 5px 5px 5px rgba(255, 255, 255, 0.562); */
+    -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+-moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
 }
 #footer_dcha> form > div {
 padding: 1em 0em;
 }
-
+#mailForm{
+    display: flex;
+    flex-direction: column;
+}
 /* MEDIAQUERIES */
 @media only screen and (max-width: 1200px) {
 
