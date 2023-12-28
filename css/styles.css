@@ -325,7 +325,7 @@ a {
 
 /* SECTIONS */
 section {
-    width: 80%;
+    width: 90%;
     max-width: 1500px;
     margin: auto;
     padding: 3em 0;
@@ -367,9 +367,106 @@ section>p {
     align-items: center;
 
 }
+#intro>div>img{
+    width: 100vw;
+}
+/* Elene Collares */
+#Collares{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#EleneCollares{
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 20em;
+    align-items: center;
+    margin: 2em;
+}
+.elene{
+    width: 20vw;
+    margin: 5em;
+    margin-bottom: 3em;
+    background-color: transparent !important;
+    position: relative;
+}
+#cambioCollar{
+    position: absolute;
+    width: 10vw;
+    background-color: transparent !important;
+}
 
-
-
+#EleneCollares>h1{
+    font-family: var(--tipoFancy1);
+    font-size: 8em;
+    background-color: transparent !important;
+    position: absolute;
+}
+#PruebaCollar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+#PruebaCollar>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    flex: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+#PruebaCollar>div>img{
+    width: 13vw;
+    padding: 0.5em;
+}
+/* JOYAS */
+#joyas{
+    width: 100vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 8em 0em;
+}
+#joyas>div{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: flex-end;
+}
+#joyas>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#joyas>div>div>h4{
+   font-family: 'EditorialNew-Italic';
+}
+#joyas>div>div>p{
+    font-family: 'EditorialNew-UltraLightItalic';
+ }
+#joyas>div>div>img{
+    width: 20vw;
+    padding: 2em;
+    padding-bottom: 5em;
+}
+#mas{
+    padding: 5em;
+    margin: 1em;
+}
+#mas>p{
+    text-align: justify;
+}
+#mas>i>a{
+    cursor: pointer;
+}
 /* DUDAS */
 #dudas{
     position: fixed;
