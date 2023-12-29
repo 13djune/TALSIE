@@ -101,7 +101,11 @@ function eliminarProducto(elemento) {
 
 
     
-
+///////////POPUP/////////
+function ClosePopUp(){
+    var popUp = document.getElementById("popUp");
+    popUp.style.display = "none";
+}
 
 
 
