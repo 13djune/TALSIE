@@ -398,7 +398,7 @@ section>p {
     font-family: 'EditorialNew-UltraLightItalic';
  }
 #joyas>div>div>img{
-    width: 20vw;
+    width: 18vw;
     padding: 2em;
     padding-bottom: 5em;
 }
@@ -408,6 +408,7 @@ section>p {
 }
 #mas>p{
     text-align: justify;
+    width: 10em;
 }
 #mas>i>a{
     cursor: pointer;
@@ -425,7 +426,34 @@ section>p {
     font-family: 'EditorialNew-UltraLightItalic' ;
 }
 /* Sobre nosotros */
+#aboutus>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -6em;
 
+   }
+#aboutus>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 1.5em;
+
+   }
+   #aboutus>div>div:nth-child(2n-1){
+     
+      margin-top: 7em;
+   }
+#aboutus>div>div>img{
+ padding: 0em 1.5em;
+ width: 15vw;
+}
+#aboutus>div>div>p{
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+  
 /* DUDAS */
 #dudas{
     position: fixed;
@@ -439,7 +467,7 @@ section>p {
 }
 /* FOOTER */
 footer {
-    padding-top: 2em;
+    padding: 8em 0em;
     box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562); 
 }
 footer>div {
