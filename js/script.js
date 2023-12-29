@@ -21,6 +21,40 @@ function menu() {
           });
 
 
+    
+///////////POPUP/////////
+function ClosePopUp(){
+    var popUp = document.getElementById("popUp");
+    popUp.style.display = "none";
+}
+
+
+
+
+
+function openMenu() {
+    document.getElementById("menu").lastElementChild.style.left = "0%";
+}
+
+function closeMenu() {
+    document.getElementById("menu").lastElementChild.style.left = "-110%";
+}
+
+function menu() {
+    "use strict";
+    if (document.getElementById("menu").lastElementChild.style.left === "0%") {
+        closeMenu();
+    } else {
+        openMenu();
+    }
+}
+
+        // HAMBURGUER
+        $(".hamburger").click(function() {
+            $(this).toggleClass('close');
+          });
+
+
 document.getElementById("botonCarrito").addEventListener("click", function() {
     var listaCarrito = document.getElementById("listaCarrito");
     var estadolistacarrito = listaCarrito.classList.contains("cerrado");

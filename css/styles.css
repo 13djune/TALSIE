@@ -57,11 +57,7 @@
     --tipoGeneral: 'EditorialNew-UltraLight';
     --tipoFancy1: 'Sloop1';
     --tipoFancy2: 'Sloop2';
-    --color1: #03045E;
-    --color2: #0077B6;
-    --color3: #CAF0F8;
-    --color4: #995FA3;
-    --color5: #A4243B;
+  
 }
 
 * {
@@ -70,10 +66,11 @@
     font-family: var(--tipoGeneral);
     scroll-behavior: smooth;
     background-color: var(--colorFondo) !important;
+    color: white;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     position: sticky;
     top: calc(-100vh + 5em);
     z-index: 10;
@@ -87,65 +84,75 @@ header {
     background-color: transparent;
 }
 
-
-/* HEADER CARROUSEL*/
-/* .slideshow {
+#popUp {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    z-index: 20;
+    box-shadow: rgba(255, 255, 255, 0.35) 10px 15px 15px;
+    padding: 6em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 80%;
+}
+#popUp > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+#popUp > div > h2 {
+    color: white;
+    font-family: var(--tipoGeneral);
+    font-size: 3em;
+    text-align: center;
+}
+#popUp > div > a {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-family: var(--tipoGeneral);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#popUp > div > form > div {
+    height: 4em;
+}
+#popUp > div > form > div > input {
+    width: 19em;
+    height: 2em;
+    color: rgba(255, 255, 255, 0.816);
+    border-radius: 2em;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+#popUp > div > form > input {
+    color: white;
     position: relative;
-    top: -10px;
-
-    overflow: hidden;
-    width: 100vw;
-    height: 90vh;
-    z-index: -2;
-    opacity: 0.8;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 15%);
+    cursor: pointer;
+    border-radius: 2em;
+    padding: 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
 }
 
-.holder {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 10000vw;
-    height: 100vh;
-    transition: left 1s;
-}
-
-.holder div {
-    float: left;
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 20px 30px;
-}
-
-.slide-1 {
-    background-image: url(../img/);
-}
-
-.slide-2 {
-    background-image: url(../img/);
-}
-
-.slide-3 {
-    background-image: url(../img/);
-}
-
-.slide-4 {
-    background-image: url(../img/);
-}
-
-.slide-5 {
-    background-image: url(../img/);
-} */
-
-
-/* MENU */
 #envio>div{
     background-color: #fff !important;
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
+    width: 100vw;
     height: 4em;
     position: absolute;
     top: 0;
@@ -182,16 +189,15 @@ header {
 #logo {
     width: 144.63px;
     height: 75.58px;
-    left: calc(50% - 177.63px/2 - 2.19px);
-    top: 113px;
     background: url(../img/Frame_5.jpg);
     background-repeat: no-repeat;
+    margin: 0em 9em;
 }
 
 #menu {
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 5em;
     display: flex;
     justify-content: space-between;
@@ -204,7 +210,7 @@ header {
     position: absolute;
     top: 4em;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 9;
     padding: 1em 2em;
     flex-direction: row;
@@ -319,7 +325,7 @@ a {
 
 /* SECTIONS */
 section {
-    width: 80%;
+    width: 90%;
     max-width: 1500px;
     margin: auto;
     padding: 3em 0;
@@ -339,8 +345,6 @@ section>p {
     font-family: var(--tipoGeneral);
     color: var(--colorClaro);
 }
-
-
 /* INTRO */
 #intro>div>h1{
     font-family: var(--tipoFancy2);
@@ -363,403 +367,190 @@ section>p {
     align-items: center;
 
 }
+#intro>div>img{
+    width: 100vw;
+}
+/* Elene Collares */
+#Collares{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#EleneCollares{
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 20em;
+    align-items: center;
+    margin: 2em;
+}
+.elene{
+    width: 20vw;
+    margin: 5em;
+    margin-bottom: 3em;
+    background-color: transparent !important;
+    position: relative;
+}
+#cambioCollar{
+    position: absolute;
+    width: 10vw;
+    background-color: transparent !important;
+}
 
-
-
+#EleneCollares>h1{
+    font-family: var(--tipoFancy1);
+    font-size: 8em;
+    background-color: transparent !important;
+    position: absolute;
+}
+#PruebaCollar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+#PruebaCollar>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    flex: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+}
+#PruebaCollar>div>img{
+    width: 13vw;
+    padding: 0.5em;
+}
+/* JOYAS */
+#joyas{
+    width: 100vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 8em 0em;
+}
+#joyas>div{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: flex-end;
+}
+#joyas>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#joyas>div>div>h4{
+   font-family: 'EditorialNew-Italic';
+}
+#joyas>div>div>p{
+    font-family: 'EditorialNew-UltraLightItalic';
+ }
+#joyas>div>div>img{
+    width: 20vw;
+    padding: 2em;
+    padding-bottom: 5em;
+}
+#mas{
+    padding: 5em;
+    margin: 1em;
+}
+#mas>p{
+    text-align: justify;
+}
+#mas>i>a{
+    cursor: pointer;
+}
+/* DUDAS */
+#dudas{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#dudas>p{
+    font-family: 'EditorialNew-UltraLightItalic';
+    color: white;
+    padding: 1em;
+}
 /* FOOTER */
-#contacto {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color1);
-    width: 100%;
-
+footer {
+    padding-top: 2em;
+    box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562); 
 }
-
-#contacto>.footer {
+footer>div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 4em 2em;
-    background-color: transparent;
-}
-
-#contacto>p {
-    text-align: center;
-    background-color: transparent;
-}
-
-#contacto>p>a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: transparent;
-}
-
-#contacto>p>a:hover {
-    color: var(--color4);
-}
-
-#contacto>.footer>div>h3 {
-    margin-bottom: 2em;
-    color: white;
-    font-size: x-large;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p {
-    margin-bottom: 1em;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p>a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p>a:hover {
-    color: var(--color4);
-}
-
-.footer>div {
-    border-left: 1px solid white;
-    padding: 0 1.6em;
-    background-color: transparent;
-
-}
-
-.social {
-    background-color: transparent;
-    list-style: none;
-    padding: inherit;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 10em;
-    justify-content: space-around;
-}
-
-.social>li {
-    color: white;
-    background-color: transparent;
-}
-
-.social>li>a>i {
-    color: white;
-    background-color: transparent;
-}
-
-.social>li>a>i:hover {
-    color: var(--color4);
-
-}
-
-
-/* COLECCIÓN HELENE */
-
-#intro_elene{  
-    height: 100vh;
-    position: sticky;
-    top: calc(-100vh - 5em);
-    z-index: 1;
-    background-image: url(../img/collarcorazon.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#intro_elene > h1 {
-    font-family: var(--tipoFancy2);
-    color: white;
-    font-size: 11em;
-    background-color: transparent!important;
-}
-
-#menu_coleccion{
-    height: 3em;
-    width: 100%;
-    padding: 0 2em;
-    list-style: none;
-    border-top: 0.5px solid;
-    border-bottom: 0.5px solid;
-    border-color: white;
-    color: var(--colorClaro);
-    font-style: italic;
-    font-size: 1em;
-    background-color: transparent;
-    display: flex;
     justify-content: space-between;
-    align-items: center;   
+    padding: 2em;
 }
-
-#menu_coleccion > ul > li:hover{
-    font-weight: bold;
-}
-
-#menu_coleccion > ul {
-    display:flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-#menu_coleccion > li {
-    opacity: 70%;
-}
-
-#menu_coleccion > ul > li {
-    padding-right:2em;
-    list-style: none;
-}
-
-#galeria_elene{
+#footer_izq{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
-
-.apartados_galeria{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 10em;
-    color: var(--colorClaro);
-}
-
-.apartados_galeria > h1 {
-    font-size: 5em;
-    font-style: italic;
-    background-color: transparent!important;
-}
-
-.apartados_galeria > p {
-    font-size: 1.5em;
-    font-style: italic;
-    background-color: transparent!important;
-}
-
-.container{
-    padding: 0 4em!important;
-    max-width: 100%!important;
-}
-
-#producto_elene{
-    height: 30em;
-    border: 0.5px solid;
-    border-radius: 50%;
-    border-color: white;
-    color: var(--colorClaro);
-    margin: 3em 2em;
+#footer_izq>div{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+    margin-left: 3em;
 }
-
-
-#producto_elene:hover{
-    opacity: 70%;
-
+#footer_izq>div>p{
+    font-family: 'EditorialNew-UltraLightItalic';
 }
-
-#producto_elene > div{
-    margin-top: 1.4em;
+#footer_izq>div>h4{
+    font-family: 'EditorialNew-Italic';
 }
-
-#producto_elene > div > img{
-    width: 100%;
+#footer_dcha{
+    display: flex;
+    flex-direction: column;
 }
-
-#producto_elene > h2{
-    margin: 0.5em;
-    margin-bottom: 0;
-    font-style: italic;
+#privacidad{
+    color: transparent !important;
+    border-style: solid !important;
+    border-color: white !important;
+    width: 1em !important;
+    height: 1em !important;
+    margin-left: 2em !important;
 }
-
-#producto_elene > p{
-    margin: 0;
-    margin-top: 0.1em;
-}
-
-
-/* lista de compras */
-
-
-#botonCarrito {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: white;
-    border: 0.5px solid;
-    width: 15em;
+#footer_dcha> form > div > input {
+    width: 19em;
     height: 2em;
+    color: rgba(255, 255, 255, 0.816);
+    border-radius: 2em;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
 }
-
-#botonCarrito:hover {
-    opacity: 70%;
-}
-
-
-#listaCarrito {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: -110%;
-    height: 100%;
-    width: 40%;
-    padding-left: 2em;
-    border: 0.5px solid;
-    background-color: #000000e8!important;
-    padding-top: 60px;
-    transition: right 0.3s ease;
-    color: var(--colorClaro);
-    overflow-y: auto;
-}
-
-#listaCarrito > button{
-    padding-left: 85%;
-    font-size: 1.5em;
-    background-color: transparent!important;
-    border: none;
-    outline: none;
-    color: var(--colorClaro);
-}
-
-#listaCarrito > button:hover{
-    opacity: 70%;    
-}
-
-#listaCarrito > h2{
-    background-color: transparent!important;
-    font-size: 2em;
-    margin-bottom: 0;
-    font-style: italic;
-}
-
-#listaCarrito > p{
-    background-color: transparent!important;
-    font-size: 1em;
-    opacity: 70%;
-    font-style: italic;
-}
-
-#listaCarrito > a{
-    border: 1px solid;
-    border-radius: 50%;
-    width: 5em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2em 0;
-}
-
-#listaCarrito > a:hover{
-    opacity: 70%;
-}
-
-/* Producto carrito */
-
-.producto_carrito{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-top: 1px solid;
-    padding-top: 1em;
-    margin-top: 2em;
-}
-
-.foto_productoCarrito{
-    width: 17%;
-    margin-right: 2em;
-}
-
-.foto_productoCarrito > img{
-    width: 100%;
-    height: auto;
-    background-color: transparent!important;
-    border: 0.5px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(249, 249, 249, 0.3);
-}
-
-.datos_productoCarrito > div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: transparent!important;
-}
-
-.datos_productoCarrito > p{
-    font-style: italic;
-    font-size: medium;
-}
-
-.cantidad_producto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cantidad_producto > p{
-    font-style: italic;
-    font-size: medium;
-}    
-
-.cantidad_producto > button{
-    border: none;
-    outline: none;
-    color: var(--colorClaro);
-    height: 1em;
-    margin: 0 2em;
-}
-
-.producto_carrito > button{
-    border: none;
-    outline: none;
-    color: var(--colorClaro);
-    background-color: transparent!important;
-    padding-left: 1em;
-    font-size: 1.5em;
-}
-
-.producto_carrito > button:hover{
-    opacity: 70%;
-}
-
-  
-
-.galeria {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .galeria img {
-    width: 100px; /* Ajusta el tamaño según tus necesidades */
+#footer_dcha> form > input {
+    color: white;
+    position: relative;
     cursor: pointer;
-  }
-  
-  /* Estilos para la lista de compra */
-  #lista-compra {
-    margin-top: 20px;
-  }
-  
-  #productos {
-    list-style: none;
-    padding: 0;
-  }
-
-
-
-
-
-
-
-
+    border-radius: 2em;
+    padding: 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+form > input:hover {
+    /* box-shadow: inset 5px 5px 5px 5px rgba(255, 255, 255, 0.562); */
+    -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+-moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+}
+#footer_dcha> form > div {
+padding: 1em 0em;
+}
+#mailForm{
+    display: flex;
+    flex-direction: column;
+}
 /* MEDIAQUERIES */
 @media only screen and (max-width: 1200px) {
 
@@ -776,23 +567,11 @@ section>p {
 
 @media only screen and (max-width: 850px) {
 
-    #listaCarrito{
-        width: 100%;
-    }
-
-    .apartados_galeria > h1 {
-        font-size: 4em;
-    }
-
 }
 
 @media only screen and (max-width: 600px) {
 
 }
 @media only screen and (max-width: 400px) {
-
-    .apartados_galeria > h1 {
-        font-size: 3em;
-    }
 
 }
