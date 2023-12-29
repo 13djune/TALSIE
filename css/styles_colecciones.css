@@ -508,7 +508,7 @@ section>p {
     }
 
     #lyra, #elene, #alexia{
-        max-height: 55vh;
+        height: 55vh;
     }
 
     .sirenpic>img{
@@ -537,12 +537,23 @@ section>p {
 }
 
 @media only screen and (max-width: 640px) {
-    .siren-colection{
-        display: flex;
-        flex-direction: column;
+
+
+    section#start{
+        margin: 0;
+        align-items: center;
+        width: auto;
     }
-    #lyra, #elene, #alexia{
+
+    .sirenpic{
+        height: 55vh;
+        width: auto;
+    }
+
+    section#alexia, section#lyra, section#elene{
         flex-direction: column;
+        height: 90vh;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 400px) {
