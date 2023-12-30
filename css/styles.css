@@ -425,6 +425,15 @@ section>p {
 #instagram>p{
     font-family: 'EditorialNew-UltraLightItalic' ;
 }
+#instagram>div{
+    display: flex;
+    flex-direction: row;
+}
+#instagram>div>div>img{
+    border-radius: 10em;
+    width: 13em;
+    margin: 1em 2em;
+}
 /* Sobre nosotros */
 #aboutus>div{
     display: flex;
