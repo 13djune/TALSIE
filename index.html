@@ -17,134 +17,221 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&family=Roboto+Condensed:wght@300&display=swap"
         rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <header>
         <div id="popUp">
             <div>
-            <h2>DESBLOQUEA TU <spam style="font-family: 'EditorialNew-Italic';">REGALO</spam> ESPECIAL</h2>
-            <br>
-            <a onclick="ClosePopUp()">
-                X
-            </a>
+                <h2>DESBLOQUEA TU <spam style="font-family: 'EditorialNew-Italic';">REGALO</spam> ESPECIAL</h2>
+                <br>
+                <a onclick="ClosePopUp()">
+                    X
+                </a>
 
-            <form>
-                <div id="mailForm">
-                   
-                    <input type="email" value="Introduzca su email..."><br><br>
-                </div>
+                <form>
+                    <div id="mailForm">
+                        <label for="email">Indroduzca su email:</label>
+                        <input type="email" value=""><br><br>
+                    </div>
 
-                <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter " onclick="ClosePopUp()">
-            </form>
-        </div>
+                    <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter "
+                        onclick="ClosePopUp()">
+                </form>
+            </div>
         </div>
         <nav id="menu">
             <span class="hamburger" onclick="menu()"><span></span></span>
             <div id="envio">
                 <div>
-                <p>ENVÍO GRÁTIS</p>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; color: black;">
-                      España (EUR €)
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">EE.UU (USD $)</a></li>
-                      <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">Japan (JPY ¥)</a></li>
-                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">U.K (GBP £)</a></li>
-                    </ul>
-                  </div>
-                  </div>
+                    <p>ENVÍO GRÁTIS</p>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="background-color: white; color: black;">
+                            España (EUR €)
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">EE.UU
+                                    (USD $)</a></li>
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">Japan
+                                    (JPY ¥)</a></li>
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">U.K
+                                    (GBP £)</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <ul>
                 <li><a href="#joyas" onclick="closeMenu()">JOYAS</a></li>
-                <li><a href="#colecciones" onclick="closeMenu()">COLECCIONES</a></li>
+                <li><a href="colecciones.html" onclick="closeMenu()">COLECCIONES</a></li>
                 <li><a href="#promociones" onclick="closeMenu()">PROMOCIONES</a></li>
-                <li><div id="logo"></div></li>
-                 <li><a href="#carrito" onclick="closeMenu()"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
-                <li><a href="#buscar" onclick="closeMenu()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
+                <li>
+                    <div id="logo"></div>
+                </li>
+                <li><a href="#carrito" onclick="closeMenu()"><i class="fa-solid fa-cart-shopping"
+                            style="color: #ffffff;"></i></a></li>
+                <li><a href="#buscar" onclick="closeMenu()"><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i></a></li>
                 <li><a href="#cuenta" onclick="closeMenu()">CUENTA</a></li>
-                <li><a href="#favs" onclick="closeMenu()">F<i class="fa-regular fa-star" style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
+                <li><a href="#favs" onclick="closeMenu()">F<i class="fa-regular fa-star"
+                            style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
 
             </ul>
         </nav>
-     
+
 
     </header>
     <section id="intro">
         <div>
             <img src="img/ola.png">
             <h1>Colección Elene</h1>
-            <p>YA DISPONIBLE</p>
+            <a href="colecciones.html#elene"><p>YA DISPONIBLE</p></a>
         </div>
     </section>
+ 
     <section id="joyas">
-        <h1>JOYAS</h1>
-      
-    </section>
-    <section class="colecciones">
-        <h1>COLECCIONES</h1>
-        
-      
-    </section>
-    <section id="promociones">
-        <h1>PROMOCIONES</h1>
-    </section>
-       
-
-  
-       <div id="dudas">
-           <p>¿dudas? chateemos</p>
-       </div>
-   
-
-
-
-</body>
-<footer>
-<div>
-    <div id="footer_izq">
         <div>
-            <h4>Información</h4>
-            <p>
-                Envío y devolución</p>
-                <p>Términos y condiciones</p>
-                <p>Política de privacidad</p>
-                <p>Cuidado de joyas</p>
-                <p>Blogs</p>
-                <p>Preguntas más frecuentes</p>
-                <p>Accesibilidad</p>
-            
-        </div>
-        <div>
-            <h4>Social</h4>
-                <p>Instagram</p>
-                <p>TikTok</p>
-                <p>Pinterest</p>
-                <p>Facebook</p>
-                <p>Recompensas</p>
-                <p>About Us</p>
-        </div>
-
-    </div>
-    <div id="footer_dcha">
-        <h4>Únete a la lista para obtener ofertas y actualizaciones exclusivas</h4>
-        <form>
-            <div id="mailForm">
-                <input type="email" value="Introduzca su email..."><br><br>
+            <div>
+                <img src="img/collarabalorios.png">
+                <h4>Coralie</h4>
+                <p>59.95€</p>
             </div>
             <div>
-                <input type="checkbox" id="privacidad" name="privacidad" value="Si">
-  <label for="privacidad">Al suscribirse, estoy de acuerdo con la Política de privacidad.</label>
-
+                <img src="img/collarcorazon.png">
+                <h4>Lyra</h4>
+                <p>40.95€</p>
             </div>
-            <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter " onclick="ClosePopUp()">
-        </form>
-        
+            <div>
+                <img src="img/collarcorazon2.png">
+                <h4>Alexia</h4>
+                <p>45.55€</p>
+            </div>
+            <div>
+                <img src="img/collarhada.png">
+                <h4>Talia</h4>
+                <p>34.95€</p>
+            </div>
+            <div>
+                <img src="img/collarLazo.png">
+                <h4>Nereida</h4>
+                <p>49.50€</p>
+            </div>
+            <div>
+                <img src="img/penmdientes.png">
+                <h4>Coralie</h4>
+                <p>39.95€</p>
+            </div>
+            <div id="mas">
+                <p>Encuentra más productos en nuestras colecciones</p>
+                <a href="colecciones.html"><i class="fa-solid fa-angles-right" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <section id="instagram">
+        <h1>Instagram</h1>
+        <p>Etiquétanos en tus fotos @enroutejewelry_</p>
+        <div>
+            <div>
+                <img src="img/modelo1.png">
+            </div>
+            <div>
+                <img src="img/modelo4.png">
+            </div>
+            <div>
+                <img src="img/modelo3.png">
+            </div>
+            <div>
+                <img src="img/modelo2.png">
+            </div>
+
+        </div>
+
+
+    </section>
+    <section id="aboutus">
+        <h1>Sobre nosotros</h1>
+        <div>
+            <div>
+                <img src="img/30dias.png">
+                <p>Devolución en 30 días gratis</p>
+            </div>
+            <div>
+                <img src="img/sostenible.png">
+                <p>Conciencia social y sostenible en la producción</p>
+            </div>
+            <div>
+                <img src="img/150.png">
+                <p>Vendiendo a +150 países alrededor del mundo</p>
+            </div>
+            <div>
+                <img src="img/servicio.png">
+                <p>Servicio al cliente a tu disposición</p>
+            </div>
+            <div>
+                <img src="img/20.png">
+                <p>20% de las ganancias al cuidado de los océanos</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div id="dudas">
+        <p>¿dudas? chateemos</p>
     </div>
-</div>
-</footer>
+
+
+    <footer>
+        <div>
+            <div id="footer_izq">
+                <div>
+                    <h4>Información</h4>
+                    <p>
+                        Envío y devolución</p>
+                    <p>Términos y condiciones</p>
+                    <p>Política de privacidad</p>
+                    <p>Cuidado de joyas</p>
+                    <p>Blogs</p>
+                    <p>Preguntas más frecuentes</p>
+                    <p>Accesibilidad</p>
+    
+                </div>
+                <div>
+                    <h4>Social</h4>
+                    <p>Instagram</p>
+                    <p>TikTok</p>
+                    <p>Pinterest</p>
+                    <p>Facebook</p>
+                    <p>Recompensas</p>
+                    <p>About Us</p>
+                </div>
+    
+            </div>
+            <div id="footer_dcha">
+                <h4>Únete a la lista para obtener ofertas y actualizaciones exclusivas</h4>
+                <form>
+                    <div id="mailForm">
+                        <label for="email">Indroduzca su email:</label>
+                        <input type="email" id="email" value="">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="privacidad" name="privacidad" value="Si">
+                        <label for="privacidad">Al suscribirse, estoy de acuerdo con la Política de privacidad.</label>
+    
+                    </div>
+                    <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter " onclick="ClosePopUp()">
+                </form>
+    
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>
