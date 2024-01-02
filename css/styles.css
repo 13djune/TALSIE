@@ -356,9 +356,13 @@ section>p {
     color: white;
     font-size: 4em;
 }
-#intro>div>p{
+#intro>div>a>p{
     font-family: var(--tipoGeneral);
     color: white;
+}
+#intro>div>a>p:hover{
+    font-family: 'EditorialNew-Italic' ;
+    cursor: pointer;
 }
 #intro{
     display: flex;
@@ -375,6 +379,7 @@ section>p {
 #intro>div>img{
     width: 100vw;
 }
+
 
 
 /* JOYAS */
@@ -439,8 +444,10 @@ section>p {
 }
 #instagram>div>div>img{
     border-radius: 10em;
+    border: 1px solid white;
     width: 13em;
     margin: 1em 2em;
+    
 }
 /* Sobre nosotros */
 #aboutus>div{
@@ -561,11 +568,31 @@ padding: 1em 0em;
 /* MEDIAQUERIES */
 @media only screen and (max-width: 1200px) {
 
-
+    #aboutus>div>div {
+        padding: 3em 0.5em;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-
+    #instagram>div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #instagram>div>div>img {
+        margin: 1em 3em;
+    }
+    #footer_izq>div>h4,   #footer_dcha>h4 {
+        font-size: 1em;
+    }
+    #footer_izq>div>p {
+        font-size: 0.8em;
+    }
+    label{
+        font-size: 0.8em;
+    }
+    #footer_dcha> form > input {
+        font-size: 0.8em;
+    }
 }
 
 
