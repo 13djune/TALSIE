@@ -46,7 +46,6 @@
             </div>
         </div>
         <nav id="menu">
-            <span class="hamburger" onclick="menu()"><span></span></span>
             <div id="envio">
                 <div>
                     <p>ENVÍO GRÁTIS</p>
@@ -66,22 +65,25 @@
                     </div>
                 </div>
             </div>
-            <ul>
-                <li><a href="#joyas" onclick="closeMenu()">JOYAS</a></li>
-                <li><a href="colecciones.html" onclick="closeMenu()">COLECCIONES</a></li>
-                <li><a href="#promociones" onclick="closeMenu()">PROMOCIONES</a></li>
+            <ul class="menu">
+                <li><a href="#joyas" onclick="closeMenu()" class="menuItem">JOYAS</a></li>
+                <li><a href="colecciones.html" onclick="closeMenu()" class="menuItem">COLECCIONES</a></li>
+                <li><a href="#promociones" onclick="closeMenu()" class="menuItem">PROMOCIONES</a></li>
                 <li>
                     <div id="logo"></div>
                 </li>
-                <li><a href="#carrito" onclick="closeMenu()"><i class="fa-solid fa-cart-shopping"
+                <li><a href="#carrito" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-cart-shopping"
                             style="color: #ffffff;"></i></a></li>
-                <li><a href="#buscar" onclick="closeMenu()"><i class="fa-solid fa-magnifying-glass"
+                <li><a href="#buscar" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-magnifying-glass"
                             style="color: #ffffff;"></i></a></li>
-                <li><a href="#cuenta" onclick="closeMenu()">CUENTA</a></li>
-                <li><a href="#favs" onclick="closeMenu()">F<i class="fa-regular fa-star"
+                <li><a href="#cuenta" onclick="closeMenu()" class="menuItem">CUENTA</a></li>
+                <li><a href="#favs" onclick="closeMenu()" class="menuItem">F<i class="fa-regular fa-star"
                             style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
+                            
 
             </ul>
+            <a href="javascript:void(0);" style="color: #ffffff; background-color: transparent !important;" class="hamburguer" onclick="toggleMenu()">
+                                <i style="color: #ffffff; background-color: transparent !important;" class="fa fa-bars"></i></a>
         </nav>
 
 
@@ -93,6 +95,59 @@
             <a href="colecciones.html#elene"><p>YA DISPONIBLE</p></a>
         </div>
         
+    </section>
+
+    <section id="elene" class="siren-colection">
+
+        <div class="sirenpic">
+            <img src="img/ELENE/elene.png" alt="" class="cambio1">
+        </div>
+
+        <div class="right-container">
+            <h2>PRUEBA TU FAVORITO</h2>
+
+            <div class="container_collares container text-center">
+                <div class="row">
+
+                    <div class="col" id="elene1">
+                        <img src="img/collares/collarabalorios.png" alt="">
+                    </div>
+
+                    <div class="col" id="elene2">
+                        <img src="img/collares/collarcorazon.png" alt="">
+                    </div>
+
+                    <div class="col" id="elene3">
+                        <img src="img/collares/collarhada.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                        
+                    <div class="col" id="elene4">
+                        <img src="img/collares/LAZO.png" alt="">
+                    </div>
+
+                    <div class="col" id="elene5">
+                        <img src="img/collares/PENDIENTES2.png" alt="">
+                    </div>
+
+                    <div class="col" id="elene6">
+                        <img src="img/collares/penmdientes.png" alt="">
+                    </div>
+                        
+                </div>
+
+            </div>
+
+            <div class="boton">
+                <a href="">VER MÁS</a>
+            </div>
+            
+        
+        </div>
+
     </section>
  
     <section id="joyas">
