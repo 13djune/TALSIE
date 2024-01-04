@@ -98,30 +98,9 @@ function eliminarProducto(elemento) {
     listaCompra.removeChild(productoCarrito);
 }
 
-let resultado = 0;
 
-    function actualizarResultado() {
-      document.getElementById('resultado').innerText = 'Resultado: ' + resultado;
-    }
-
-    function sumar() {
-      resultado++;
-      actualizarResultado();
-    }
-
-    function restar() {
-      resultado--;
-      actualizarResultado();
-    }
-
-
-
-    
-
-
-
-
-        
-
-
+function closeArticulo() {
+    "use strict";
+    document.querySelector('favart').style.display = "none";
+}
 
