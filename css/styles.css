@@ -451,6 +451,19 @@ section>p {
 
 }
 
+/* FAVORITOS */
+
+#favoritos h1{
+    padding: 2em 2em 0.3em;
+}
+
+#favoritos h4{
+    font-family: 'EditorialNew-UltraLightItalic';
+    color: rgba(255, 255, 255, 0.575);
+    text-align: center;
+    font-size: calc(1.1rem + .3vw);
+}
+
 
 
 /* MEDIAQUERIES */
