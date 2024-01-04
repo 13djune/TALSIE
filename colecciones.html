@@ -24,33 +24,45 @@
 <body>
     <header>
         <nav id="menu">
-            <span class="hamburger" onclick="menu()"><span></span></span>
             <div id="envio">
                 <div>
-                <p>ENVÍO GRÁTIS</p>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; color: black;">
-                      España (EUR €)
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">EE.UU (USD $)</a></li>
-                      <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">Japan (JPY ¥)</a></li>
-                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">U.K (GBP £)</a></li>
-                    </ul>
-                  </div>
-                  </div>
+                    <p>ENVÍO GRÁTIS</p>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="background-color: white; color: black;">
+                            España (EUR €)
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">EE.UU
+                                    (USD $)</a></li>
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">Japan
+                                    (JPY ¥)</a></li>
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">U.K
+                                    (GBP £)</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul>
-                <li><a href="#joyas" onclick="closeMenu()">JOYAS</a></li>
-                <li><a href="colecciones.html" onclick="closeMenu()">COLECCIONES</a></li>
-                <li><a href="#promociones" onclick="closeMenu()">PROMOCIONES</a></li>
-                <li><div id="logo"></div></li>
-                 <li><a href="#carrito" onclick="closeMenu()"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
-                <li><a href="#buscar" onclick="closeMenu()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
-                <li><a href="#cuenta" onclick="closeMenu()">CUENTA</a></li>
-                <li><a href="#favs" onclick="closeMenu()">F<i class="fa-regular fa-star" style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
+            <ul class="menu">
+                <li><a href="#joyas" onclick="closeMenu()" class="menuItem">JOYAS</a></li>
+                <li><a href="colecciones.html" onclick="closeMenu()" class="menuItem">COLECCIONES</a></li>
+                <li><a href="#promociones" onclick="closeMenu()" class="menuItem">PROMOCIONES</a></li>
+                <li>
+                    <div id="logo"></div>
+                </li>
+                <li><a href="#carrito" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-cart-shopping"
+                            style="color: #ffffff;"></i></a></li>
+                <li><a href="#buscar" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i></a></li>
+                <li><a href="#cuenta" onclick="closeMenu()" class="menuItem">CUENTA</a></li>
+                <li><a href="#favs" onclick="closeMenu()" class="menuItem">F<i class="fa-regular fa-star"
+                            style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
+                            
 
             </ul>
+            <a href="javascript:void(0);" style="color: #ffffff; background-color: transparent !important;" class="hamburguer" onclick="toggleMenu()">
+                <i style="color: #ffffff; background-color: transparent !important;" class="fa fa-bars"></i>
+            </a>
         </nav>
      
 
