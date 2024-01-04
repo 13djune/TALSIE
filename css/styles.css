@@ -466,6 +466,65 @@ section>p {
     font-size: calc(1.1rem + .3vw);
 }
 
+#favoritos .rounded{
+    width:10em;
+}
+
+.favart{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+    border: #ffffff;
+    border-style: solid;
+    border-radius: 50px;
+    margin:  3em 1.5em;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.listfav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art_1{
+    width: 60%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.art_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.art_3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#favoritos .btn{
+    margin-top: 1em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#favoritos h4{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#favoritos h2, #favoritos h5, #favoritos p, #favoritos .fa-regular{
+    color: rgba(255, 255, 255, 0.575);
+}
+
+#favoritos .fa-regular:hover{
+    scale: 1.1;
+}
+
 
 /* COLECCIÓN HELENE */
 
