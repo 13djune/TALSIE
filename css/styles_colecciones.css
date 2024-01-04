@@ -345,8 +345,13 @@ section>p {
 
 .boton:hover{
     scale: 110%;
-    box-shadow: 0 0 30px 15px #ffffff;
+   
     transition: .5s;
+  
+        -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+    -moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+    box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+  
 }
 
 .boton>a{
@@ -508,7 +513,7 @@ section>p {
     }
 
     #lyra, #elene, #alexia{
-        height: 55vh;
+        max-height: 55vh;
     }
 
     .sirenpic>img{
@@ -537,23 +542,12 @@ section>p {
 }
 
 @media only screen and (max-width: 640px) {
-
-
-    section#start{
-        margin: 0;
-        align-items: center;
-        width: auto;
-    }
-
-    .sirenpic{
-        height: 55vh;
-        width: auto;
-    }
-
-    section#alexia, section#lyra, section#elene{
+    .siren-colection{
+        display: flex;
         flex-direction: column;
-        height: 90vh;
-        align-items: center;
+    }
+    #lyra, #elene, #alexia{
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 400px) {
