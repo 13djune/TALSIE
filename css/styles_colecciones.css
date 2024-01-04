@@ -387,7 +387,9 @@ section>p {
 
 
 
-/* FOOTER */
+/* FOOTER FOOTER FOOTER FOOTER */
+
+
 #contacto {
     display: flex;
     flex-direction: column;
@@ -475,6 +477,81 @@ section>p {
 }
 
 
+/* FOOTER */
+footer {
+    padding: 8em 0em;
+    box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562); 
+}
+footer>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+#footer_izq{
+    display: flex;
+    flex-direction: row;
+}
+#footer_izq>div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+}
+#footer_izq>div>p{
+    font-family: 'EditorialNew-UltraLightItalic';
+}
+#footer_izq>div>h4{
+    font-family: 'EditorialNew-Italic';
+}
+#footer_dcha{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+#privacidad{
+    color: transparent !important;
+    border-style: solid !important;
+    border-color: white !important;
+    width: 1em !important;
+    height: 1em !important;
+    margin-left: 1.5em !important;
+}
+#footer_dcha> form > div > input {
+    width: 19em;
+    height: 2em;
+    color: rgba(255, 255, 255, 0.816);
+    border-radius: 2em;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+#footer_dcha> form > input {
+    color: white;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2em;
+    padding: 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+form > input:hover {
+   
+    -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+-moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+}
+#footer_dcha> form > div {
+padding: 1em 0em;
+}
+#mailForm{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
@@ -526,6 +603,80 @@ section>p {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    #instagram>div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #instagram>div>div>img {
+        margin: 1em 3em;
+    }
+    #footer_izq>div>h4,   #footer_dcha>h4 {
+        font-size: 1em;
+    }
+    #footer_izq>div>p {
+        font-size: 0.8em;
+    }
+    label{
+        font-size: 0.8em;
+    }
+    #footer_dcha> form > input {
+        font-size: 0.8em;
+    }
+    #logo {
+        margin: 0em 1em;
+    }
+}
+
+
+@media only screen and (max-width: 850px){
+    .hamburguer{
+        display: block;
+        position: fixed;
+        top: 5em;
+        right: 1em;
+        margin: 1em;
+        cursor: pointer;
+        z-index: 20;
+    }
+   .menu{
+       display: none; 
+      
+   }
+    .menuItem{
+       float: none;
+       display: block;
+       text-align: right;
+    }
+   
+   
+   .show-menu {
+       display: flex;
+       position: fixed;
+       right: 0;
+       left: auto;
+       width: 35vw;
+       height: 75vh;
+       flex-direction: column;
+       padding: 3em;
+       box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.562);
+   
+   }
+
+   footer {
+        padding: 1em 0em;
+    }
+
+    footer>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer_izq>div {
+        margin: 3em;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .right-container > h2{
         font-size: 15pt;
@@ -561,8 +712,33 @@ section>p {
         align-items: center;
     }
 }
+
+@media only screen and (max-width: 400px){
+    .show-menu {
+        width: 50vw; 
+    }
+}
+
 @media only screen and (max-width: 400px) {
     h2{
         justify-content: center;
+    }
+
+    label {
+        font-size: 0.6em;
+    }
+    #privacidad {
+        width: 0.8em !important;
+        height: 0.8em !important;
+        margin-left: 1em !important;
+    }
+    #footer_dcha> form > input  {
+        font-size: 0.7em;
+    }
+    #envio>div>p {
+        font-size: 0.7em;
+    }
+    .btn {
+        scale: 80%;
     }
 }
