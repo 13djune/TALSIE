@@ -11,7 +11,7 @@
     <script src="js/script.js"></script>
     <script src="js/Chart.min.js"></script>
     <script src="https://kit.fontawesome.com/3d1ed1057a.js" crossorigin="anonymous"></script>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles_colecciones.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -24,36 +24,257 @@
 <body>
     <header>
         <nav id="menu">
-            <span class="hamburger" onclick="menu()"><span></span></span>
             <div id="envio">
                 <div>
-                <p>ENVÍO GRÁTIS</p>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; color: black;">
-                      España (EUR €)
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">EE.UU (USD $)</a></li>
-                      <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">Japan (JPY ¥)</a></li>
-                      <li><a class="dropdown-item" style="background-color: white; color: black;"href="#">U.K (GBP £)</a></li>
-                    </ul>
-                  </div>
-                  </div>
+                    <p>ENVÍO GRÁTIS</p>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="background-color: white; color: black;">
+                            España (EUR €)
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">EE.UU
+                                    (USD $)</a></li>
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">Japan
+                                    (JPY ¥)</a></li>
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">U.K
+                                    (GBP £)</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul>
-                <li><a href="#joyas" onclick="closeMenu()">JOYAS</a></li>
-                <li><a href="colecciones.html" onclick="closeMenu()">COLECCIONES</a></li>
-                <li><a href="#promociones" onclick="closeMenu()">PROMOCIONES</a></li>
-                <li><div id="logo"></div></li>
-                 <li><a href="#carrito" onclick="closeMenu()"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
-                <li><a href="#buscar" onclick="closeMenu()"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
-                <li><a href="#cuenta" onclick="closeMenu()">CUENTA</a></li>
-                <li><a href="#favs" onclick="closeMenu()">F<i class="fa-regular fa-star" style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
+            <ul class="menu">
+                <li><a href="#joyas" onclick="closeMenu()" class="menuItem">JOYAS</a></li>
+                <li><a href="colecciones.html" onclick="closeMenu()" class="menuItem">COLECCIONES</a></li>
+                <li><a href="#promociones" onclick="closeMenu()" class="menuItem">PROMOCIONES</a></li>
+                <li>
+                    <div id="logo"></div>
+                </li>
+                <li><a href="#carrito" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-cart-shopping"
+                            style="color: #ffffff;"></i></a></li>
+                <li><a href="#buscar" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i></a></li>
+                <li><a href="#cuenta" onclick="closeMenu()" class="menuItem">CUENTA</a></li>
+                <li><a href="#favs" onclick="closeMenu()" class="menuItem">F<i class="fa-regular fa-star"
+                            style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
+                            
 
             </ul>
+            <a href="javascript:void(0);" style="color: #ffffff; background-color: transparent !important;" class="hamburguer" onclick="toggleMenu()">
+                <i style="color: #ffffff; background-color: transparent !important;" class="fa fa-bars"></i>
+            </a>
         </nav>
      
 
     </header>
+    
+    <section id="start">
+        <h1>COLECCIONES</h1>
+    </section>
 
+
+    <section id="elene" class="siren-colection">
+
+        <div class="sirenpic">
+            <img src="img/ELENE/elene.png" alt="" class="cambio1">
+        </div>
+
+        <div class="right-container">
+            <h2>PRUEBA TU FAVORITO</h2>
+
+            <div class="container_collares container text-center">
+                <div class="row">
+
+                    <div class="col" id="elene1">
+                        <img src="img/collares/collarabalorios.png" alt="">
+                    </div>
+
+                    <div class="col" id="elene2">
+                        <img src="img/collares/collarcorazon.png" alt="">
+                    </div>
+
+                    <div class="col" id="elene3">
+                        <img src="img/collares/collarhada.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                        
+                    <div class="col" id="elene4">
+                        <img src="img/collares/LAZO.png" alt="">
+                    </div>
+
+                    <div class="col" id="elene5">
+                        <img src="img/collares/PENDIENTES2.png" alt="">
+                    </div>
+
+                    <div class="col" id="elene6">
+                        <img src="img/collares/penmdientes.png" alt="">
+                    </div>
+                        
+                </div>
+
+            </div>
+
+            <div class="boton">
+                <a href="">VER MÁS</a>
+            </div>
+            
+        
+        </div>
+
+    </section>
+
+    <section id="lyra" class="siren-colection">
+
+        <div class="sirenpic">
+            <img src="img/LYRa/lyra.png" alt="" class="cambio2">
+        </div>
+
+        <div class="right-container">
+            <h2>PRUEBA TU FAVORITO</h2>
+
+            <div class="container_collares container text-center">
+                <div class="row">
+
+                    <div class="col" id="lyra1">
+                        <img src="img/collares/Lyra_penmdientes.png" alt="">
+                    </div>
+
+                    <div class="col" id="lyra2">
+                        <img src="img/collares/Lyra-collar1.png" alt="">
+                    </div>
+
+                    <div class="col" id="lyra3">
+                        <img src="img/collares/lyra-collar3.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                        
+                    <div class="col" id="lyra4">
+                        <img src="img/collares/lyra-penmdientes2.png" alt="">
+                    </div>
+
+                    <div class="col" id="lyra5">
+                        <img src="img/collares/lyra-collra2.png" alt="">
+                    </div>
+
+                    <div class="col" id="lyra6">
+                        <img src="img/collares/lyra-penmdientes3.png" alt="">
+                    </div>
+                        
+                </div>
+
+            </div>
+
+            <div class="boton">
+                <a href="">VER MÁS</a>
+            </div>
+            
+        
+        </div>
+
+    </section>
+
+    <section id="alexia" class="siren-colection">
+
+        <div class="sirenpic">
+            <img src="img/ALEXIA/alexia0.png" alt="" class="cambio3">
+        </div>
+
+        <div class="right-container">
+            <h2>PRUEBA TU FAVORITO</h2>
+
+            <div class="container_collares container text-center">
+                <div class="row">
+
+                    <div class="col" id="alexia1">
+                        <img src="img/collares/collaresalexia/collar3.png" alt="">
+                    </div>
+
+                    <div class="col" id="alexia2">
+                        <img src="img/collares/collaresalexia/collar6.png" alt="">
+                    </div>
+
+                    <div class="col" id="alexia3">
+                        <img src="img/collares/collaresalexia/earcuff2.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                        
+                    <div class="col" id="alexia4">
+                        <img src="img/collares/collaresalexia/pendientes5.png" alt="">
+                    </div>
+
+                    <div class="col" id="alexia5">
+                        <img src="img/collares/collaresalexia/collar2.png" alt="">
+                    </div>
+
+                    <div class="col" id="alexia6">
+                        <img src="img/collares/collaresalexia/alexia1.png" alt="">
+                    </div>
+                        
+                </div>
+
+            </div>
+
+            <div class="boton">
+                <a href="">VER MÁS</a>
+            </div>
+            
+        
+        </div>
+
+    </section>
+
+        <footer>
+        <div>
+            <div id="footer_izq">
+                <div>
+                    <h4>Información</h4>
+                    <p>
+                        Envío y devolución</p>
+                    <p>Términos y condiciones</p>
+                    <p>Política de privacidad</p>
+                    <p>Cuidado de joyas</p>
+                    <p>Blogs</p>
+                    <p>Preguntas más frecuentes</p>
+                    <p>Accesibilidad</p>
+    
+                </div>
+                <div>
+                    <h4>Social</h4>
+                    <p>Instagram</p>
+                    <p>TikTok</p>
+                    <p>Pinterest</p>
+                    <p>Facebook</p>
+                    <p>Recompensas</p>
+                    <p>About Us</p>
+                </div>
+    
+            </div>
+            <div id="footer_dcha">
+                <h4>Únete a la lista para obtener ofertas y actualizaciones exclusivas</h4>
+                <form>
+                    <div id="mailForm">
+                        <label for="email">Indroduzca su email:</label>
+                        <input type="email" id="email" value="">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="privacidad" name="privacidad" value="Si">
+                        <label for="privacidad">Al suscribirse, estoy de acuerdo con la Política de privacidad.</label>
+    
+                    </div>
+                    <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter " onclick="ClosePopUp()">
+                </form>
+    
+            </div>
+        </div>
+    </footer>
+    
 </body>

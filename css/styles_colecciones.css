@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&family=Roboto+Condensed:wght@300&display=swap');
+
+@font-face {
+    font-family: 'EditorialNew-Italic';
+    src: url(../tipografias/PPEditorialNew-Italic.otf) format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EditorialNew-Regular';
+    src: url(../tipografias/PPEditorialNew-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EditorialNew-Ultrabold';
+    src: url(../tipografias/PPEditorialNew-Ultrabold.otf) format('opentype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EditorialNew-UltraboldItalic';
+    src: url(../tipografias/PPEditorialNew-UltraboldItalic.otf) format('opentype');
+    font-weight: bolder;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'EditorialNew-UltraLightItalic';
+    src: url(../tipografias/PPEditorialNew-UltralightItalic.otf) format('opentype');
+    font-weight: lighter;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'EditorialNew-UltraLight';
+    src: url(../tipografias/PPEditorialNew-Ultralight.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sloop1';
+    src: url(../tipografias/Sloop.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sloop2';
+    src: url(../tipografias/sloopscript2.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --colorFondo: black;
+    --colorClaro: white;
+    --tipoTitulos: 'EditorialNew-UltraLightItalic';
+    --tipoGeneral: 'EditorialNew-UltraLight';
+    --tipoFancy1: 'Sloop1';
+    --tipoFancy2: 'Sloop2';
+    --color1: #03045E;
+    --color2: #0077B6;
+    --color3: #CAF0F8;
+    --color4: #995FA3;
+    --color5: #A4243B;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--tipoGeneral);
+    scroll-behavior: smooth;
+    background-color: var(--colorFondo) !important;
+}
+
+header {
+    width: 100vw;
+    position: sticky;
+    top: calc(-100vh + 5em);
+    z-index: 10;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+
+/* ///////////////////////////// */
+
+/* MENU */
+#envio>div{
+    background-color: #fff !important;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 4em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    align-items: center;
+}
+#envio>div>p{
+    color: black;
+    font-family: var(--tipoGeneral);
+    background-color: transparent !important;
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.dropdown{
+   z-index: 11;
+    background-color: white !important;
+}
+.dropdown>button{
+    color: black !important;
+     background-color: white !important;
+ }
+.dropdown-menu{
+    background-color: white !important;
+   
+}
+.dropdown-item{
+    background-color: white !important;
+    color: black !important;
+}
+
+#envio>div{
+    background-color: #fff !important;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 4em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    align-items: center;
+}
+#envio>div>p{
+    color: black;
+    font-family: var(--tipoGeneral);
+    background-color: transparent !important;
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.dropdown{
+   z-index: 11;
+    background-color: white !important;
+}
+.dropdown>button{
+    color: black !important;
+     background-color: white !important;
+ }
+.dropdown-menu{
+    background-color: white !important;
+   
+}
+.dropdown-item{
+    background-color: white !important;
+    color: black !important;
+}
+.dropdown-item:hover{
+    border: 0.5px solid black;
+
+}
+
+#logo {
+    width: 144.63px;
+    height: 75.58px;
+    background: url(../img/Frame_5.jpg);
+    background-repeat: no-repeat;
+    margin: 0em 9em;
+}
+
+#menu {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    background-color: transparent;
+}
+
+.menu {
+    position: fixed;
+    top: 4em;
+    left: 0;
+    width: 100vw;
+    z-index: 9;
+    padding: 1em 2em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    transition-duration: 1s;
+    display: flex;
+    box-shadow: 0px 6px 15px 0 rgba(255, 255, 255, 0.562);
+}
+
+.menu>li {
+    list-style: none;
+    color: var(--colorClaro);
+  
+    font-size: 1em;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none !important;
+    background-color: transparent;
+    color: var(--colorClaro)  !important;
+}
+.menu>li>a:hover {
+    font-family: 'EditorialNew-Italic' ;
+}
+.menu>li>a>i:hover {
+    scale: 120%;
+}
+
+.hamburguer{
+    display: none;
+}
+.showMenu {
+    transform: translateY(0);
+}
+
+
+/* ///////////////////////////// */
+
+
+/* SECTIONS */
+section {
+    width: 80%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 3em 0;
+}
+
+section>h1 {
+    text-align: center;
+    color: var(--colorClaro);
+    font-size: 3em;
+    padding: 2em 0em 0.5em 0em;
+    font-family: var(--tipoTitulos);
+}
+
+section>p {
+    text-align: justify;
+    margin: 1em;
+    font-family: var(--tipoGeneral);
+    color: var(--colorClaro);
+}
+
+
+
+
+/* ///////////////////////////// */
+
+/* SIRENAS SIRENAS SIRENAS */
+#elene, #alexia{
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+
+}
+#lyra{
+    display: flex;
+    flex-direction: row-reverse;
+    max-height: 100vh;
+}
+
+.siren-colection>div{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right-container>div{
+    padding: 5%;
+}
+.right-container>h2{
+    color: var(--colorClaro);
+    font-size: 20pt;
+    font-family: var(--tipoGeneral);
+}
+
+.boton{
+    border-radius: 3em;
+    border-color: var(--color3);
+    border-style: solid;
+    border-width: .5px;
+    padding: .25%;
+}
+
+.boton:hover{
+    scale: 110%;
+   
+    transition: .5s;
+  
+        -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+    -moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+    box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+  
+}
+
+.boton>a{
+    font-family: var(--tipoGeneral);
+    color: var(--colorClaro);
+}
+
+.sirenpic>img{
+    height: 90%;
+}
+
+.container_collares{
+    display: flex;
+    flex-direction: column
+
+}
+
+.row{
+    padding: 0 0 5% 0;
+}
+
+.col>img{
+    width: 85%;
+}
+
+.col>img:hover{
+    scale: 110%;
+    transition: .5s;
+    /* box-shadow: 0 0 15px 5px #ffffff; */
+}
+
+/* SIRENAS SIRENAS SIRENAS */
+
+
+
+/* FOOTER FOOTER FOOTER FOOTER */
+
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color1);
+    width: 100%;
+
+}
+
+#contacto>.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4em 2em;
+    background-color: transparent;
+}
+
+#contacto>p {
+    text-align: center;
+    background-color: transparent;
+}
+
+#contacto>p>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#contacto>p>a:hover {
+    color: var(--color4);
+}
+
+#contacto>.footer>div>h3 {
+    margin-bottom: 2em;
+    color: white;
+    font-size: x-large;
+    background-color: transparent;
+}
+
+#contacto>.footer>div>p {
+    margin-bottom: 1em;
+    background-color: transparent;
+}
+
+#contacto>.footer>div>p>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#contacto>.footer>div>p>a:hover {
+    color: var(--color4);
+}
+
+.footer>div {
+    border-left: 1px solid white;
+    padding: 0 1.6em;
+    background-color: transparent;
+
+}
+
+.social {
+    background-color: transparent;
+    list-style: none;
+    padding: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 10em;
+    justify-content: space-around;
+}
+
+.social>li {
+    color: white;
+    background-color: transparent;
+}
+
+.social>li>a>i {
+    color: white;
+    background-color: transparent;
+}
+
+.social>li>a>i:hover {
+    color: var(--color4);
+
+}
+
+
+/* FOOTER */
+footer {
+    padding: 8em 0em;
+    box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562); 
+}
+footer>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+#footer_izq{
+    display: flex;
+    flex-direction: row;
+}
+#footer_izq>div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+}
+#footer_izq>div>p{
+    font-family: 'EditorialNew-UltraLightItalic';
+}
+#footer_izq>div>h4{
+    font-family: 'EditorialNew-Italic';
+}
+#footer_dcha{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+#privacidad{
+    color: transparent !important;
+    border-style: solid !important;
+    border-color: white !important;
+    width: 1em !important;
+    height: 1em !important;
+    margin-left: 1.5em !important;
+}
+#footer_dcha> form > div > input {
+    width: 19em;
+    height: 2em;
+    color: rgba(255, 255, 255, 0.816);
+    border-radius: 2em;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+#footer_dcha> form > input {
+    color: white;
+    position: relative;
+    cursor: pointer;
+    border-radius: 2em;
+    padding: 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+form > input:hover {
+   
+    -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+-moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+}
+#footer_dcha> form > div {
+padding: 1em 0em;
+}
+#mailForm{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* MEDIAQUERIES */
+
+@media only screen and (max-width: 1200px) {
+    .sirenpic>img{
+        height: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .sirenpic>img{
+        height: 70%;
+        margin-top: 20%;
+    }
+
+    #start{
+        padding: 4em 0 0 0;
+    }
+    section{
+        padding: 0;
+    }
+
+    #lyra, #elene, #alexia{
+        max-height: auto;
+    }
+
+    footer{
+        margin-top: 2em;
+    }
+
+}
+
+@media only screen and (max-width: 1040px) {
+    .sirenpic>img{
+        scale: 85%;
+
+    }
+
+    #lyra, #elene, #alexia{
+        height: 55vh;
+    }
+
+    .sirenpic>img{
+        height: 95%;
+        margin-top: 0;
+    }
+
+    #start > h1{
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #instagram>div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #instagram>div>div>img {
+        margin: 1em 3em;
+    }
+    #footer_izq>div>h4,   #footer_dcha>h4 {
+        font-size: 1em;
+    }
+    #footer_izq>div>p {
+        font-size: 0.8em;
+    }
+    label{
+        font-size: 0.8em;
+    }
+    #footer_dcha> form > input {
+        font-size: 0.8em;
+    }
+    #logo {
+        margin: 0em 1em;
+    }
+}
+
+
+@media only screen and (max-width: 850px){
+    .hamburguer{
+        display: block;
+        position: fixed;
+        top: 5em;
+        right: 1em;
+        margin: 1em;
+        cursor: pointer;
+        z-index: 20;
+    }
+   .menu{
+       display: none; 
+      
+   }
+    .menuItem{
+       float: none;
+       display: block;
+       text-align: right;
+    }
+   
+   
+   .show-menu {
+       display: flex;
+       position: fixed;
+       right: 0;
+       left: auto;
+       width: 35vw;
+       height: 75vh;
+       flex-direction: column;
+       padding: 3em;
+       box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.562);
+   
+   }
+
+   footer {
+        padding: 1em 0em;
+    }
+
+    footer>div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer_izq>div {
+        margin: 3em;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .right-container > h2{
+        font-size: 15pt;
+    }
+    div.boton{
+        scale: 90%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    div.boton > a{
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+
+    section#start{
+        margin: 0;
+        align-items: center;
+        width: auto;
+    }
+
+    .sirenpic{
+        height: 55vh;
+        width: auto;
+    }
+
+    section#alexia, section#lyra, section#elene{
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .siren-colection > div.right-container{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .show-menu {
+        width: 50vw; 
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .siren-colection > div.right-container{
+        width: 80%;
+    }
+    section{
+        margin-bottom: 2em;
+    }
+}
+
+
+@media only screen and (max-width: 420px)  {
+    .siren-colection > div.right-container{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h2{
+        justify-content: center;
+    }
+
+    label {
+        font-size: 0.6em;
+    }
+    #privacidad {
+        width: 0.8em !important;
+        height: 0.8em !important;
+        margin-left: 1em !important;
+    }
+    #footer_dcha> form > input  {
+        font-size: 0.7em;
+    }
+    #envio>div>p {
+        font-size: 0.7em;
+    }
+    .btn {
+        scale: 80%;
+    }
+}
+
+@media only screen and (max-width: 373px)  {
+    .siren-colection > div.right-container{
+        width: 90%;
+    }
+}
