@@ -201,49 +201,49 @@ function eliminarProducto(elemento) {
 
 //FAVORITOS
 
+// $(document).ready(function(){
+
+//     $("#cerrar1").click(function(){
+//         $("#favart1").styles.attr("display none")
+//     });
+
+//     $("#cerrar2").click(function(){
+//         $("#favart2").styles.attr("display none")
+//     });
+
+//     $("#cerrar3").click(function(){
+//         $("#favart3").styles.attr("display none")
+//     });
+
+//     $("#cerrar4").click(function(){
+//         $("#favart4").styles.attr("display none")
+//     });
+
+
+// });
+
+// $(document).ready(function(){
+//     $("#cerrar1").click(function(){
+//         $("#favart1").css("display", "none");
+//     });
+// });
+
 $(document).ready(function(){
-
     $("#cerrar1").click(function(){
-        $("#favart1").styles.attr("display none")
+        console.log("Se hizo clic en #cerrar1");
+        $("#favart1").css("display", "none");
     });
-
     $("#cerrar2").click(function(){
-        $("#favart2").styles.attr("display none")
+        console.log("Se hizo clic en #cerrar1");
+        $("#favart2").css("display", "none");
     });
-
-    $("#cerrar3").click(function(){
-        $("#favart3").styles.attr("display none")
+    $("#cerrar2").click(function(){
+        console.log("Se hizo clic en #cerrar1");
+        $("#favart3").css("display", "none");
     });
-
-    $("#cerrar4").click(function(){
-        $("#favart4").styles.attr("display none")
+    $("#cerrar2").click(function(){
+        console.log("Se hizo clic en #cerrar1");
+        $("#favart1").css("display", "none");
     });
-
-
 });
-
-// $(document).ready(function(){
-//     $("#cerrar1").click(function(){
-//         $("#favart1").css("display", "none");
-//     });
-// });
-
-// $(document).ready(function(){
-//     $("#cerrar1").click(function(){
-//         console.log("Se hizo clic en #cerrar1");
-//         $("#favart1").css("display", "none");
-//     });
-//     $("#cerrar2").click(function(){
-//         console.log("Se hizo clic en #cerrar1");
-//         $("#favart2").css("display", "none");
-//     });
-//     $("#cerrar2").click(function(){
-//         console.log("Se hizo clic en #cerrar1");
-//         $("#favart3").css("display", "none");
-//     });
-//     $("#cerrar2").click(function(){
-//         console.log("Se hizo clic en #cerrar1");
-//         $("#favart1").css("display", "none");
-//     });
-// });
 
