@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="img/isotipoW.png" style="height: 100%; width: auto;">
     <title>TALSIE</title>
     <script src="js/jquery-3.6.1.min.js"></script>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
     <script src="js/Chart.min.js"></script>
     <script src="https://kit.fontawesome.com/3d1ed1057a.js" crossorigin="anonymous"></script>
     <link href="css/cuenta.css" rel="stylesheet" type="text/css">
@@ -26,8 +26,22 @@
 
 <body>
     <header>
+        <div id="popUp">
+            <div>
+                <h2>HISTORIA DE<spam style="font-family: 'EditorialNew-Italic';"> PEDIDOS</spam></h2>
+                <br>
+                <a onclick="ClosePopUp()">
+                    X
+                </a>
+
+                <form>
+
+                    <input id="sendButton" type="button" value=" Aún no tienes órdenes  :( "
+                        onclick="ClosePopUp()">
+                </form>
+            </div>
+        </div>
         <nav id="menu">
-            <span class="hamburger" onclick="menu()"><span></span></span>
             <div id="envio">
                 <div>
                     <p>ENVÍO GRÁTIS</p>
@@ -47,101 +61,97 @@
                     </div>
                 </div>
             </div>
-            <ul>
-                <li><a href="#joyas" onclick="closeMenu()">JOYAS</a></li>
-                <li><a href="#colecciones" onclick="closeMenu()">COLECCIONES</a></li>
-                <li><a href="#promociones" onclick="closeMenu()">PROMOCIONES</a></li>
+            <ul class="menu">
+                <li><a href="#joyas" onclick="closeMenu()" class="menuItem">JOYAS</a></li>
+                <li><a href="colecciones.html" onclick="closeMenu()" class="menuItem">COLECCIONES</a></li>
+                <li><a href="#promociones" onclick="closeMenu()" class="menuItem">PROMOCIONES</a></li>
                 <li>
                     <div id="logo"></div>
                 </li>
-                <li><a href="#carrito" onclick="closeMenu()"><i class="fa-solid fa-cart-shopping"
+                <li><a href="#carrito" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-cart-shopping"
                             style="color: #ffffff;"></i></a></li>
-                <li><a href="#buscar" onclick="closeMenu()"><i class="fa-solid fa-magnifying-glass"
+                <li><a href="#buscar" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-magnifying-glass"
                             style="color: #ffffff;"></i></a></li>
-                <li><a href="#cuenta" onclick="closeMenu()">CUENTA</a></li>
-                <li><a href="#favs" onclick="closeMenu()">F<i class="fa-regular fa-star"
+                <li><a href="#cuenta" onclick="closeMenu()" class="menuItem">CUENTA</a></li>
+                <li><a href="#favs" onclick="closeMenu()" class="menuItem">F<i class="fa-regular fa-star"
                             style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
+                            
 
             </ul>
+            <a href="javascript:void(0);" style="color: #ffffff; background-color: transparent !important;" class="hamburguer" onclick="toggleMenu()">
+                                <i style="color: #ffffff; background-color: transparent !important;" class="fa fa-bars"></i></a>
         </nav>
 
 
     </header>
-    <section id="cuenta">
+  
+    <section id="Hello">
+        <br><br><br><br>
+        <h1>Hola María</h1>
+        <p>Aquí está todo lo que necesitas saber de tu cuenta.</p>
         <div>
-            <h1>Hola maría,</h1>
-            <p>Aquí está todo lo que necesitas saber de tu cuenta.</p>
-        </div>
-        <section class="collar-section">
-            <div class="collar-button">
-                <button>
-                    <p>
-                        Tus pedidos
-                    </p>
+            <div>
+                <img src="img/misdatos.png">
             </div>
-            <div class="collar-button">
-                <button>
-                    <p>
-                        Tus datos
-                    </p>
-                </button>
+            <div>
+                <img src="img/puntosacumulados.png">
             </div>
-            <div class="collar-button">
-                <button>
-                    <p>
-                        Puntos
-                    </p>
-                </button>
+            <div>
+                <img src="img/misdatos.png">
             </div>
-        </section>    
 
         </div>
     </section>
 
-</body>
-<footer>
-    <div>
-        <div id="footer_izq">
-            <div>
-                <h4>Información</h4>
-                <p>
-                    Envío y devolución</p>
-                <p>Términos y condiciones</p>
-                <p>Política de privacidad</p>
-                <p>Cuidado de joyas</p>
-                <p>Blogs</p>
-                <p>Preguntas más frecuentes</p>
-                <p>Accesibilidad</p>
+    <div id="dudas">
+        <p>¿dudas? chateemos</p>
+    </div>
 
-            </div>
-            <div>
-                <h4>Social</h4>
-                <p>Instagram</p>
-                <p>TikTok</p>
-                <p>Pinterest</p>
-                <p>Facebook</p>
-                <p>Recompensas</p>
-                <p>About Us</p>
-            </div>
 
-        </div>
-        <div id="footer_dcha">
-            <h4>Únete a la lista para obtener ofertas y actualizaciones exclusivas</h4>
-            <form>
-                <div id="mailForm">
-                    <label for="email">Indroduzca su email:</label>
-                    <input type="email" id="email" value="">
+    <footer>
+        <div>
+            <div id="footer_izq">
+                <div>
+                    <h4>Información</h4>
+                    <p>
+                        Envío y devolución</p>
+                    <p>Términos y condiciones</p>
+                    <p>Política de privacidad</p>
+                    <p>Cuidado de joyas</p>
+                    <p>Blogs</p>
+                    <p>Preguntas más frecuentes</p>
+                    <p>Accesibilidad</p>
+    
                 </div>
                 <div>
-                    <input type="checkbox" id="privacidad" name="privacidad" value="Si">
-                    <label for="privacidad">Al suscribirse, estoy de acuerdo con la Política de privacidad.</label>
-
+                    <h4>Social</h4>
+                    <p>Instagram</p>
+                    <p>TikTok</p>
+                    <p>Pinterest</p>
+                    <p>Facebook</p>
+                    <p>Recompensas</p>
+                    <p>About Us</p>
                 </div>
-                <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter " onclick="ClosePopUp()">
-            </form>
-
+    
+            </div>
+            <div id="footer_dcha">
+                <h4>Únete a la lista para obtener ofertas y actualizaciones exclusivas</h4>
+                <form>
+                    <div id="mailForm">
+                        <label for="email">Indroduzca su email:</label>
+                        <input type="email" id="email" value="">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="privacidad" name="privacidad" value="Si">
+                        <label for="privacidad">Al suscribirse, estoy de acuerdo con la Política de privacidad.</label>
+    
+                    </div>
+                    <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter " onclick="ClosePopUp()">
+                </form>
+    
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</body>
 
 </html>
