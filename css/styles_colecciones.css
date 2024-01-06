@@ -286,6 +286,11 @@ section>p {
     justify-content: center;
 }
 
+.cambio1:hover{
+    scale: 105%;
+    transition: 0.5s;
+}
+
 .right-container{
     display: flex;
     flex-direction: column;
@@ -524,12 +529,17 @@ padding: 1em 0em;
 
 /* MEDIAQUERIES */
 
+
+
 @media only screen and (max-width: 1200px) {
     .sirenpic>img{
         height: 80%;
     }
 
 }
+
+
+
 
 @media only screen and (max-width: 1100px) {
     .sirenpic>img{
