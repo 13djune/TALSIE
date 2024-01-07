@@ -273,3 +273,4 @@ function cerrarMisdatos() {
     var ventana = document.getElementById('informate');
     ventana.style.display = 'none';
 }
+

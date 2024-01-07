@@ -96,7 +96,16 @@
                 <div class="ventana-content">
                     <span class="close" onclick="cerrarMispuntos()">&times;</span>
                     <h1>PUNTOS ACUMULADOS</h1>
-                    <h2>350puntos</h2>
+                    <h2>
+                        <i>
+                            "350 puntos"
+                        </i>
+                    </h2>
+
+                    <input id="sendButton" type="button" value=" obten tus beneficios " onclick="cerrarMispuntos()">
+
+                    <br>
+
                     <p>Te quedan 84 puntos para ser <i>GOLD</i></p>
 
                 </div>
@@ -109,13 +118,27 @@
             <div class="informate" id="informate">
                 <div class="ventana-content">
                     <span class="close" onclick="cerrarMisdatos()">&times;</span>
-                    <h1>TUS DATOS</h1>
-                    
-                    <div class="input-group">
-                        <span class="input-group-text">First and last name</span>
-                        <input type="text" aria-label="First name" class="form-control">
-                        <input type="text" aria-label="Last name" class="form-control">
-                      </div>
+
+                    <form id="formDatos">
+                        <p>TUS DATOS</p>
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Lucía" />
+            
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Pérez Martinez" />
+            
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fechaNacimiento" name="01/02/2002" />
+            
+                        <label for="pais">País:</label>
+                        <input type="text" id="pais" name="pais" placeholder="España" />
+            
+                        <label for="telefono">Número de Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 658 393 233" />
+            
+                        <button type="button" onclick="cerrarMisdatos()">Guardar</button>
+                    </form>
 
                 </div>
             </div>
