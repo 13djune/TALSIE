@@ -57,11 +57,7 @@
     --tipoGeneral: 'EditorialNew-UltraLight';
     --tipoFancy1: 'Sloop1';
     --tipoFancy2: 'Sloop2';
-    --color1: #03045E;
-    --color2: #0077B6;
-    --color3: #CAF0F8;
-    --color4: #995FA3;
-    --color5: #A4243B;
+  
 }
 
 * {
@@ -70,6 +66,7 @@
     font-family: var(--tipoGeneral);
     scroll-behavior: smooth;
     background-color: var(--colorFondo) !important;
+    color: white;
 }
 
 header {
@@ -87,47 +84,73 @@ header {
     background-color: transparent;
 }
 
-
-
-/* ///////////////////////////// */
-
-/* MENU */
-#envio>div{
-    background-color: #fff !important;
+#popUp {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    z-index: 20;
+    box-shadow: rgba(255, 255, 255, 0.35) 10px 15px 15px;
+    padding: 6em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 80%;
+}
+#popUp > div {
     display: flex;
-    flex-direction: row-reverse;
-    width: 100vw;
-    height: 4em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.5em;
+    flex-direction: column;
     align-items: center;
+    margin: 2em;
 }
-#envio>div>p{
-    color: black;
+#popUp > div > h2 {
+    color: white;
     font-family: var(--tipoGeneral);
-    background-color: transparent !important;
+    font-size: 3em;
+    text-align: center;
+}
+#popUp > div > a {
     position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+    top: 50%;
+    right: 5%;
+    font-family: var(--tipoGeneral);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
-.dropdown{
-   z-index: 11;
-    background-color: white !important;
+#popUp > div > form > div {
+    height: 4em;
 }
-.dropdown>button{
-    color: black !important;
-     background-color: white !important;
- }
-.dropdown-menu{
-    background-color: white !important;
-   
+#popUp > div > form > div > input {
+    width: 19em;
+    height: 2em;
+    color: rgba(255, 255, 255, 0.816);
+    border-radius: 2em;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
 }
-.dropdown-item{
-    background-color: white !important;
-    color: black !important;
+#popUp > div > form > input {
+    color: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 15%);
+    cursor: pointer;
+    border-radius: 2em;
+    padding: 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+#sendButton:hover{
+    -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+-moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
 }
 
 #envio>div{
@@ -233,15 +256,11 @@ a {
 }
 .showMenu {
     transform: translateY(0);
-}
-
-
-/* ///////////////////////////// */
-
+  }
 
 /* SECTIONS */
 section {
-    width: 80%;
+    width: 90%;
     max-width: 1500px;
     margin: auto;
     padding: 3em 0;
@@ -251,7 +270,7 @@ section>h1 {
     text-align: center;
     color: var(--colorClaro);
     font-size: 3em;
-    padding: 2em 0em 0.5em 0em;
+    padding: 2em;
     font-family: var(--tipoTitulos);
 }
 
@@ -262,33 +281,20 @@ section>p {
     color: var(--colorClaro);
 }
 
-
-
-
-/* ///////////////////////////// */
-
-/* SIRENAS SIRENAS SIRENAS */
-#elene, #alexia{
+/* PRODUCTO */
+#marinda{
     display: flex;
     flex-direction: row;
     max-height: 100vh;
 
 }
-#lyra{
-    display: flex;
-    flex-direction: row-reverse;
-    max-height: 100vh;
-}
 
-.siren-colection>div{
+.siren-colection>div {
     width: 50%;
     display: flex;
     justify-content: center;
-}
-
-.cambio1:hover{
-    scale: 105%;
-    transition: 0.5s;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
 
 .right-container{
@@ -330,8 +336,12 @@ section>p {
     color: var(--colorClaro);
 }
 
-.sirenpic>img{
+/* .sirenpic>img{
     height: 90%;
+} */
+
+.sirenpic>img {
+    height: 65%;
 }
 
 .container_collares{
@@ -354,99 +364,51 @@ section>p {
     /* box-shadow: 0 0 15px 5px #ffffff; */
 }
 
-/* SIRENAS SIRENAS SIRENAS */
 
-
-
-/* FOOTER FOOTER FOOTER FOOTER */
-
-
-#contacto {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color1);
-    width: 100%;
-
+/* INFO */
+#joyas{
+    width: 100vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: none;
+    margin: 8em 0em;
+    box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562), 0px 15px 15px 0 rgba(255, 255, 255, 0.562);
+    -webkit-clip-path: inset(-25px 0px -25px -25px);
+    clip-path: inset(-25px 0px -25px -25px);
 }
-
-#contacto>.footer {
+#joyas>div{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 4em 2em;
-    background-color: transparent;
+    overflow-x: scroll;
+    align-items: flex-end;
 }
-
-#contacto>p {
-    text-align: center;
-    background-color: transparent;
-}
-
-#contacto>p>a {
-    color: white;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-#contacto>p>a:hover {
-    color: var(--color4);
-}
-
-#contacto>.footer>div>h3 {
-    margin-bottom: 2em;
-    color: white;
-    font-size: x-large;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p {
-    margin-bottom: 1em;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p>a {
-    color: white;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p>a:hover {
-    color: var(--color4);
-}
-
-.footer>div {
-    border-left: 1px solid white;
-    padding: 0 1.6em;
-    background-color: transparent;
-
-}
-
-.social {
-    background-color: transparent;
-    list-style: none;
-    padding: inherit;
+#joyas>div>div{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    height: 10em;
-    justify-content: space-around;
+    align-items: center;
 }
-
-.social>li {
-    color: white;
-    background-color: transparent;
+#joyas>div>div>h4{
+   font-family: 'EditorialNew-Italic';
 }
-
-.social>li>a>i {
-    color: white;
-    background-color: transparent;
+#joyas>div>div>p{
+    font-family: 'EditorialNew-UltraLightItalic';
+ }
+#joyas>div>div>img{
+    width: 18vw;
+    padding: 2em;
+    padding-bottom: 5em;
 }
-
-.social>li>a>i:hover {
-    color: var(--color4);
-
+#mas{
+    padding: 5em;
+    margin: 1em;
 }
-
+#mas>p{
+    text-align: justify;
+    width: 10em;
+}
+#mas>i>a{
+    cursor: pointer;
+}
 
 /* FOOTER */
 footer {
@@ -523,65 +485,14 @@ padding: 1em 0em;
     display: flex;
     flex-direction: column;
 }
-
-
-
-
-
 /* MEDIAQUERIES */
-
-
-
 @media only screen and (max-width: 1200px) {
+
+    #aboutus>div>div {
+        padding: 3em 0.5em;
+    }
     .sirenpic>img{
         height: 80%;
-    }
-
-}
-
-
-
-
-@media only screen and (max-width: 1100px) {
-    .sirenpic>img{
-        height: 70%;
-        margin-top: 20%;
-    }
-
-    #start{
-        padding: 4em 0 0 0;
-    }
-    section{
-        padding: 0;
-    }
-
-    #lyra, #elene, #alexia{
-        max-height: auto;
-    }
-
-    footer{
-        margin-top: 2em;
-    }
-
-}
-
-@media only screen and (max-width: 1040px) {
-    .sirenpic>img{
-        scale: 85%;
-
-    }
-
-    #lyra, #elene, #alexia{
-        height: 55vh;
-    }
-
-    .sirenpic>img{
-        height: 95%;
-        margin-top: 0;
-    }
-
-    #start > h1{
-        font-size: 2.5em;
     }
 }
 
@@ -608,124 +519,171 @@ padding: 1em 0em;
     #logo {
         margin: 0em 1em;
     }
+    .sirenpic>img{
+        height: 70%;
+        margin-top: 20%;
+    }
+
+    
+
+  #marinda{
+        max-height: auto;
+    }
+}
+@media only screen and (max-width: 1040px) {
+    .sirenpic>img{
+        scale: 85%;
+
+    }
+
+     #marinda{
+        max-height: 55vh;
+    }
+
+    .sirenpic>img{
+        height: 95%;
+        margin-top: 0;
+    }
+
 }
 
 
-@media only screen and (max-width: 850px){
-    .hamburguer{
-        display: block;
-        position: fixed;
-        top: 5em;
-        right: 1em;
-        margin: 1em;
-        cursor: pointer;
-        z-index: 20;
+
+
+@media only screen and (max-width: 850px) {
+    #intro>div>img{
+        width: 100vw;
     }
-   .menu{
-       display: none; 
-      
-   }
-    .menuItem{
-       float: none;
-       display: block;
-       text-align: right;
-    }
+ .hamburguer{
+     display: block;
+     position: fixed;
+     top: 5em;
+     right: 1em;
+     margin: 1em;
+     cursor: pointer;
+     z-index: 20;
+ }
+.menu{
+    display: none; 
    
-   
-   .show-menu {
-       display: flex;
-       position: fixed;
-       right: 0;
-       left: auto;
-       width: 35vw;
-       height: 75vh;
-       flex-direction: column;
-       padding: 3em;
-       box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.562);
-   
-   }
+}
+ .menuItem{
+    float: none;
+    display: block;
+    text-align: right;
+ }
 
-   footer {
-        padding: 1em 0em;
-    }
 
-    footer>div {
-        flex-direction: column;
-        align-items: center;
-    }
+.show-menu {
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: auto;
+    width: 35vw;
+    height: 75vh;
+    flex-direction: column;
+    padding: 3em;
+    box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.562);
 
-    #footer_izq>div {
-        margin: 3em;
-    }
+}
+#popUp > div > h2 {
+
+    font-size: 2em;
+
+}
+#aboutus>div {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#aboutus>div>div {
+    margin-top: 1em !important;
+}
+#aboutus>div>div>img {
+    padding: 0em 1.5em;
+    width: 37vw;
+}
+footer {
+    padding: 1em 0em;
+}
+footer>div {
+
+    flex-direction: column;
+  
+    align-items: center;
+}
+#footer_izq>div {
+    margin: 3em;
 }
 
-@media only screen and (max-width: 750px) {
-    .right-container > h2{
-        font-size: 15pt;
-    }
-    div.boton{
-        scale: 90%;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    }
-    div.boton > a{
-        align-items: center;
-    }
+#joyas>div>div>img {
+    width: 50vw;
+
+}
+.right-container > h2{
+    font-size: 15pt;
+}
+div.boton{
+    scale: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+div.boton > a{
+    align-items: center;
 }
 
-@media only screen and (max-width: 640px) {
-
-
-    section#start{
-        margin: 0;
-        align-items: center;
-        width: auto;
-    }
-
-    .sirenpic{
-        height: 55vh;
-        width: auto;
-    }
-
-    section#alexia, section#lyra, section#elene{
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-    }
-
-    .siren-colection > div.right-container{
-        width: 70%;
-    }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
+    #joyas>div>div>img {
+        width: 42vw;
+    }
+ 
+
     .show-menu {
         width: 50vw; 
     }
-}
-
-@media only screen and (max-width: 500px){
-    .siren-colection > div.right-container{
-        width: 80%;
+    #marinda {
+        flex-direction: column;
+        max-height: 1000vh;
     }
-    section{
-        margin-bottom: 2em;
+    .sirenpic>img {
+
+        height: 53%;
+        width: 65vw;
     }
-}
-
-
-@media only screen and (max-width: 420px)  {
-    .siren-colection > div.right-container{
-        width: 90%;
+    
+    .siren-colection>div {
+        width: 100%;
     }
-}
+   
 
+}
 @media only screen and (max-width: 400px) {
-    h2{
-        justify-content: center;
+    #joyas>div>div>img {
+        width: 60vw;
     }
-
+    #aboutus>div>div>img {
+        width: 62vw;
+    }
+    #footer_izq>div>p {
+        font-size: 0.6em;
+    }
+    #footer_izq>div>h4, #footer_dcha>h4 {
+        font-size: 0.8em;
+    }
+    #footer_dcha> form > div > input {
+        width: 13em;
+    }
+    #popUp > div > h2 {
+        font-size: 1.5em;
+    }
+    #popUp > div > form > div > input {
+        width: 13em;
+    }
+    #popUp > div > form > input {
+        font-size: 0.8em;
+    }
     label {
         font-size: 0.6em;
     }
@@ -742,11 +700,5 @@ padding: 1em 0em;
     }
     .btn {
         scale: 80%;
-    }
-}
-
-@media only screen and (max-width: 373px)  {
-    .siren-colection > div.right-container{
-        width: 90%;
     }
 }
