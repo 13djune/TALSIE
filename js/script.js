@@ -117,6 +117,13 @@ $(document).ready(function(){
         $(".cambio3").attr("src","img/ALEXIA/alexia11.png")
     });
 
+
+
+    $(".cambio1").click(function(){
+        window.location.href = "https://siendo-elene.cargo.site/";
+    });
+
+
 });
     
 ///////////POPUP/////////
