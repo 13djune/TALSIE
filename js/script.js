@@ -1,3 +1,4 @@
+// MENU
 function openMenu() {
     document.getElementById("menu").lastElementChild.style.left = "0%";
 }
@@ -25,7 +26,7 @@ function closeMenu() {
     menu.classList.remove('show-menu');
 }
 
-
+// FIN MENU
 
 document.getElementById("botonCarrito").addEventListener("click", function() {
     var listaCarrito = document.getElementById("listaCarrito");
