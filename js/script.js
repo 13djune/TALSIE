@@ -114,7 +114,7 @@ $(document).ready(function(){
 
 
     $(".cambio1").click(function(){
-        window.location.href = "elene.cargo.site";
+        window.location.href = "https://elene.cargo.site/";
     });
 
 
