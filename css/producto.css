@@ -84,6 +84,75 @@ header {
     background-color: transparent;
 }
 
+#popUp {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    z-index: 20;
+    box-shadow: rgba(255, 255, 255, 0.35) 10px 15px 15px;
+    padding: 6em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 80%;
+}
+#popUp > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+#popUp > div > h2 {
+    color: white;
+    font-family: var(--tipoGeneral);
+    font-size: 3em;
+    text-align: center;
+}
+#popUp > div > a {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-family: var(--tipoGeneral);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#popUp > div > form > div {
+    height: 4em;
+}
+#popUp > div > form > div > input {
+    width: 19em;
+    height: 2em;
+    color: rgba(255, 255, 255, 0.816);
+    border-radius: 2em;
+    padding: 0.2em 0.2em 0.2em 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+#popUp > div > form > input {
+    color: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 15%);
+    cursor: pointer;
+    border-radius: 2em;
+    padding: 0.5em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
+#sendButton:hover{
+    -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+-moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+}
+
 #envio>div{
     background-color: #fff !important;
     display: flex;
@@ -212,47 +281,135 @@ section>p {
     color: var(--colorClaro);
 }
 
-/* Hello _ Cuenta María */
-#Hello{
+/* PRODUCTO */
+#marinda{
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+
+}
+
+.siren-colection>div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right-container>div{
+    padding: 5%;
+}
+.right-container>h2{
+    color: var(--colorClaro);
+    font-size: 20pt;
+    font-family: var(--tipoGeneral);
+}
+
+.boton{
+    border-radius: 3em;
+    border-color: var(--color3);
+    border-style: solid;
+    border-width: .5px;
+    padding: .25%;
+}
+
+.boton:hover{
+    scale: 110%;
+   
+    transition: .5s;
+  
+        -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+    -moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+    box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+  
+}
+
+.boton>a{
+    font-family: var(--tipoGeneral);
+    color: var(--colorClaro);
+}
+
+/* .sirenpic>img{
+    height: 90%;
+} */
+
+.sirenpic>img {
+    height: 65%;
+}
+
+.container_collares{
+    display: flex;
+    flex-direction: column
+
+}
+
+.row{
+    padding: 0 0 5% 0;
+}
+
+.col>img{
+    width: 85%;
+}
+
+.col>img:hover{
+    scale: 110%;
+    transition: .5s;
+    /* box-shadow: 0 0 15px 5px #ffffff; */
+}
+
+
+/* INFO */
+#joyas{
+    width: 100vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: none;
+    margin: 8em 0em;
+    box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562), 0px 15px 15px 0 rgba(255, 255, 255, 0.562);
+    -webkit-clip-path: inset(-25px 0px -25px -25px);
+    clip-path: inset(-25px 0px -25px -25px);
+}
+#joyas>div{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: flex-end;
+}
+#joyas>div>div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#Hello>h1{
-    padding: 0em !important;
+#joyas>div>div>h4{
+   font-family: 'EditorialNew-Italic';
 }
-#Hello>p{
-    font-family: 'EditorialNew-UltraLightItalic' ;
-}
-
-#Hello>div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#Hello>div>div>img{
-    border-radius: 10em;
-    border: 1px solid white;
-    width: 13em;
-    margin: 1em 2em;
-    
-}
-  
-/* DUDAS */
-#dudas{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: transparent !important;
-}
-#dudas>p{
+#joyas>div>div>p{
     font-family: 'EditorialNew-UltraLightItalic';
-    color: white;
-    padding: 1em;
-    background-color: transparent !important;
+ }
+#joyas>div>div>img{
+    width: 18vw;
+    padding: 2em;
+    padding-bottom: 5em;
 }
+#mas{
+    padding: 5em;
+    margin: 1em;
+}
+#mas>p{
+    text-align: justify;
+    width: 10em;
+}
+#mas>i>a{
+    cursor: pointer;
+}
+
 /* FOOTER */
 footer {
     padding: 8em 0em;
@@ -327,7 +484,6 @@ padding: 1em 0em;
     display: flex;
     flex-direction: column;
 }
-
 /* MEDIAQUERIES */
 @media only screen and (max-width: 1200px) {
 
@@ -369,7 +525,7 @@ padding: 1em 0em;
 
     
 
-  #elene{
+  #marinda{
         max-height: auto;
     }
 }
@@ -379,7 +535,7 @@ padding: 1em 0em;
 
     }
 
-     #elene{
+     #marinda{
         max-height: 55vh;
     }
 
@@ -457,6 +613,11 @@ footer>div {
 #footer_izq>div {
     margin: 3em;
 }
+
+#joyas>div>div>img {
+    width: 50vw;
+
+}
 .right-container > h2{
     font-size: 15pt;
 }
@@ -481,7 +642,7 @@ div.boton > a{
     .show-menu {
         width: 50vw; 
     }
-    #elene {
+    #marinda {
         flex-direction: column;
         max-height: 1000vh;
     }
@@ -497,8 +658,10 @@ div.boton > a{
    
 
 }
-
 @media only screen and (max-width: 400px) {
+    #joyas>div>div>img {
+        width: 60vw;
+    }
     #aboutus>div>div>img {
         width: 62vw;
     }
@@ -511,7 +674,15 @@ div.boton > a{
     #footer_dcha> form > div > input {
         width: 13em;
     }
-    
+    #popUp > div > h2 {
+        font-size: 1.5em;
+    }
+    #popUp > div > form > div > input {
+        width: 13em;
+    }
+    #popUp > div > form > input {
+        font-size: 0.8em;
+    }
     label {
         font-size: 0.6em;
     }
@@ -529,86 +700,4 @@ div.boton > a{
     .btn {
         scale: 80%;
     }
-}
-
-
-/*POP UP MIS PEDIDOS*/
-
-.container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.ventana {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.ventana-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.cerrar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-div.ventana-content {
-    background-color: red !important;
-}
-
-
-/* POP UP MIS PUNTOS */
-
-.container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.bonus-ovalado {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-.bonus-ovalado h1 {
-    margin-bottom: 10px;
-}
-
-.bonus-ovalado button {
-    background-color: gold;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.cerrar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
 }

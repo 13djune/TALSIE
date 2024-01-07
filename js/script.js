@@ -227,10 +227,29 @@ function eliminarProducto(elemento) {
 
     
 
+/*POP UPS apartado de CUENTA*/
 
+/* PEDIDOS */
 
+function mostrarVentana() {
+    var ventana = document.getElementById('ventana');
+    ventana.style.display = 'block';
+}
 
-        
+function cerrarVentana() {
+    var ventana = document.getElementById('ventana');
+    ventana.style.display = 'none';
+}
 
+/* PUNTOS */
 
+function mostrarBonus() {
+    var popUpOvalado = document.getElementById('popUpOvalado');
+    popUpOvalado.style.display = 'block';
+}
+
+function cerrarBonus() {
+    var popUpOvalado = document.getElementById('popUpOvalado');
+    popUpOvalado.style.display = 'none';
+}
 
