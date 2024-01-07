@@ -274,3 +274,47 @@ function cerrarMisdatos() {
     ventana.style.display = 'none';
 }
 
+
+
+    
+
+/*POP UPS apartado de CUENTA*/
+
+/* PEDIDOS */
+
+function mostrarVentana() {
+    var ventana = document.getElementById('ventana');
+    ventana.style.display = 'block';
+}
+
+function cerrarVentana() {
+    var ventana = document.getElementById('ventana');
+    ventana.style.display = 'none';
+}
+
+/* PUNTOS ACUMULADOS */
+
+
+function mostrarMispuntos() {
+    var ventana = document.getElementById('puntuacion');
+    ventana.style.display = 'block';
+}
+
+function cerrarMispuntos() {
+    var ventana = document.getElementById('puntuacion');
+    ventana.style.display = 'none';
+}
+
+/* MIS DATOS */
+
+
+function mostrarMisdatos() {
+    var ventana = document.getElementById('informate');
+    ventana.style.display = 'block';
+}
+
+function cerrarMisdatos() {
+    var ventana = document.getElementById('informate');
+    ventana.style.display = 'none';
+}
+
