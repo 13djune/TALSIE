@@ -70,7 +70,7 @@
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     position: sticky;
     top: calc(-100vh + 5em);
     z-index: 10;
@@ -157,7 +157,7 @@ box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
     background-color: #fff !important;
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
+    width: 100vw;
     height: 4em;
     position: fixed;
     top: 0;
@@ -206,7 +206,7 @@ box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
 #menu {
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 5em;
     display: flex;
     justify-content: space-between;
@@ -219,7 +219,7 @@ box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
     position: fixed;
     top: 4em;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 9;
     padding: 1em 2em;
     flex-direction: row;
@@ -280,8 +280,6 @@ section>p {
     font-family: var(--tipoGeneral);
     color: var(--colorClaro);
 }
-
-
 /* INTRO */
 #intro>div>h1{
     font-family: var(--tipoFancy2);
@@ -575,404 +573,7 @@ padding: 1em 0em;
     display: flex;
     flex-direction: column;
 }
-
-
-/* FAVORITOS */
-
-#favoritos h1{
-    padding: 2em 2em 0.3em;
-}
-
-#favoritos h4{
-    font-family: 'EditorialNew-UltraLightItalic';
-    color: rgba(255, 255, 255, 0.575);
-    text-align: center;
-    font-size: calc(1.1rem + .3vw);
-}
-
-#favoritos .rounded{
-    width:10em;
-}
-
-.favart{
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    filter: drop-shadow(0px 0px 5px #ffffff);
-    border: #ffffff;
-    border-style: solid;
-    border-radius: 50px;
-    margin:  3em 1.5em;
-    justify-content: space-between;
-    width: 40%;
-}
-
-.listfav{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.art_1{
-    width: 60%;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-}
-
-.art_2{
-    display: flex;
-    justify-content: space-between;
-}
-
-.art_3{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#favoritos .btn{
-    margin-top: 1em;
-    color: rgba(255, 255, 255, 0.9);
-}
-
-#favoritos h4{
-    color: rgba(255, 255, 255, 0.9);
-}
-
-#favoritos h2, #favoritos h5, #favoritos p, #favoritos .fa-regular{
-    color: rgba(255, 255, 255, 0.575);
-}
-
-#favoritos .fa-regular:hover{
-    scale: 1.1;
-}
-
-.butCalc{
-    font-family: var(--tipoGeneral);
-    font-size: calc(1.325rem + .9vw);
-    color: rgba(255, 255, 255, 0.575);
-    border: none;
-}
-
-
-/* COLECCIÓN HELENE */
-
-#intro_elene{  
-    height: 100vh;
-    position: sticky;
-    top: calc(-100vh - 5em);
-    z-index: 1;
-    background-image: url(../img/portada\ elene.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#intro_elene > h1 {
-    font-family: var(--tipoFancy2);
-    color: white;
-    font-size: 11em;
-    background-color: transparent!important;
-}
-
-#menu_coleccion{
-    height: 3em;
-    width: 100%;
-    padding: 0 2em;
-    list-style: none;
-    border-top: 0.5px solid;
-    border-bottom: 0.5px solid;
-    border-color: white;
-    color: var(--colorClaro);
-    font-style: italic;
-    font-size: 1em;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   
-}
-
-#menu_coleccion > ul > li:hover{
-    font-weight: bold;
-}
-
-#menu_coleccion > ul {
-    display:flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-#menu_coleccion > li {
-    opacity: 70%;
-}
-
-#menu_coleccion > ul > li {
-    padding-right:2em;
-    list-style: none;
-}
-
-#galeria_elene{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.apartados_galeria{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 10em;
-    color: var(--colorClaro);
-}
-
-.apartados_galeria > h1 {
-    font-size: 5em;
-    font-style: italic;
-    background-color: transparent!important;
-}
-
-.apartados_galeria > p {
-    font-size: 1.5em;
-    font-style: italic;
-    background-color: transparent!important;
-}
-
-.container{
-    padding: 0 4em!important;
-    max-width: 100%!important;
-}
-
-#producto_elene{
-    height: 30em;
-    border: 0.5px solid;
-    border-radius: 50%;
-    border-color: white;
-    color: var(--colorClaro);
-    margin: 3em 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-
-#producto_elene:hover{
-    opacity: 70%;
-
-}
-
-#producto_elene > div{
-    margin-top: 1.4em;
-}
-
-#producto_elene > div > img{
-    width: 100%;
-}
-
-#producto_elene > h2{
-    margin: 0.5em;
-    margin-bottom: 0;
-    font-style: italic;
-}
-
-#producto_elene > p{
-    margin: 0;
-    margin-top: 0.1em;
-}
-
-
-/* lista de compras */
-
-
-#botonCarrito {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: white;
-    border: 0.5px solid;
-    width: 15em;
-    height: 2em;
-}
-
-#botonCarrito:hover {
-    opacity: 70%;
-}
-
-
-#listaCarrito {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    right: -110%;
-    height: 100%;
-    width: 40%;
-    padding-left: 2em;
-    border: 0.5px solid;
-    background-color: #000000e8!important;
-    padding-top: 60px;
-    transition: right 0.3s ease;
-    color: var(--colorClaro);
-    overflow-y: auto;
-}
-
-#listaCarrito > button{
-    padding-left: 85%;
-    font-size: 1.5em;
-    background-color: transparent!important;
-    border: none;
-    outline: none;
-    color: var(--colorClaro);
-}
-
-#listaCarrito > button:hover{
-    opacity: 70%;    
-}
-
-#listaCarrito > h2{
-    background-color: transparent!important;
-    font-size: 2em;
-    margin-bottom: 0;
-    font-style: italic;
-}
-
-#listaCarrito > p{
-    background-color: transparent!important;
-    font-size: 1em;
-    opacity: 70%;
-    font-style: italic;
-}
-
-#listaCarrito > a{
-    border: 1px solid;
-    border-radius: 50%;
-    width: 5em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2em 0;
-}
-
-#listaCarrito > a:hover{
-    opacity: 70%;
-}
-
-/* Producto carrito */
-
-.producto_carrito{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-top: 1px solid;
-    padding-top: 1em;
-    margin-top: 2em;
-}
-
-.foto_productoCarrito{
-    width: 17%;
-    margin-right: 2em;
-}
-
-.foto_productoCarrito > img{
-    width: 100%;
-    height: auto;
-    background-color: transparent!important;
-    border: 0.5px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(249, 249, 249, 0.3);
-}
-
-.datos_productoCarrito > div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: transparent!important;
-}
-
-.datos_productoCarrito > p{
-    font-style: italic;
-    font-size: medium;
-}
-
-.cantidad_producto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cantidad_producto > p{
-    font-style: italic;
-    font-size: medium;
-}    
-
-.cantidad_producto > button{
-    border: none;
-    outline: none;
-    color: var(--colorClaro);
-    height: 1em;
-    margin: 0 2em;
-}
-
-.producto_carrito > button{
-    border: none;
-    outline: none;
-    color: var(--colorClaro);
-    background-color: transparent!important;
-    padding-left: 1em;
-    font-size: 1.5em;
-}
-
-.producto_carrito > button:hover{
-    opacity: 70%;
-}
-
-  
-
-.galeria {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  
-  .galeria img {
-    width: 100px; /* Ajusta el tamaño según tus necesidades */
-    cursor: pointer;
-  }
-  
-  /* Estilos para la lista de compra */
-  #lista-compra {
-    margin-top: 20px;
-  }
-  
-  #productos {
-    list-style: none;
-    padding: 0;
-  }
-
-
-
-
-
-
-
-
 /* MEDIAQUERIES */
-@media only screen and (max-width: 1350px){
-
-    .favart {
-        width: 60%;
-    }
-    
-}
-
-
 @media only screen and (max-width: 1200px) {
 
     #aboutus>div>div {
@@ -1138,18 +739,6 @@ div.boton > a{
 
 }
 
-    #listaCarrito{
-        width: 100%;
-    }
-
-    .apartados_galeria > h1 {
-        font-size: 4em;
-    }
-
-    .favart {
-        width: 90%;
-    }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -1164,26 +753,8 @@ div.boton > a{
    
    
 
-    .favart {
-        flex-direction: column;
-    }
-
-    .art_1 {
-        width: 100%;
-    }
-    
-    #favoritos h1 {
-        padding: 2em 0em 0.3em;
-    }
-
 }
 @media only screen and (max-width: 400px) {
-
-    .apartados_galeria > h1 {
-        font-size: 3em;
-    }
-
-
     #joyas>div>div>img {
         width: 60vw;
     }
@@ -1225,5 +796,4 @@ div.boton > a{
     .btn {
         scale: 80%;
     }
-
 }
