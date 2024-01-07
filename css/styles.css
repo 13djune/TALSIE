@@ -611,7 +611,9 @@ padding: 1em 0em;
         height: 70%;
         margin-top: 20%;
     }
-
+    #joyas>div>div>img {
+        width: 28vw;
+    }
     
 
   #elene{
@@ -731,6 +733,10 @@ div.boton > a{
 
 .siren-colection>div {
     width: 100%;
+}
+#aboutus>div>div>p {
+    font-size: 0.8em;
+
 }
 
 }
