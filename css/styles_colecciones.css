@@ -450,6 +450,7 @@ section>p {
 
 /* FOOTER */
 footer {
+    color: white !important;
     padding: 8em 0em;
     box-shadow: 0 -15px 15px 0 rgb(255, 255, 255); 
 }
