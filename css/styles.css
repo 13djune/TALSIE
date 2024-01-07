@@ -719,6 +719,19 @@ div.boton{
 div.boton > a{
     align-items: center;
 }
+#elene {
+    flex-direction: column;
+    max-height: 1000vh;
+}
+.sirenpic>img {
+
+    height: 53%;
+    width: 65vw;
+}
+
+.siren-colection>div {
+    width: 100%;
+}
 
 }
 
@@ -731,19 +744,7 @@ div.boton > a{
     .show-menu {
         width: 50vw; 
     }
-    #elene {
-        flex-direction: column;
-        max-height: 1000vh;
-    }
-    .sirenpic>img {
-
-        height: 53%;
-        width: 65vw;
-    }
-    
-    .siren-colection>div {
-        width: 100%;
-    }
+   
    
 
 }
