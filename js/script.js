@@ -248,15 +248,28 @@ function cerrarVentana() {
     ventana.style.display = 'none';
 }
 
-/* PUNTOS */
+/* PUNTOS ACUMULADOS */
 
-function mostrarBonus() {
-    var popUpOvalado = document.getElementById('popUpOvalado');
-    popUpOvalado.style.display = 'block';
+
+function mostrarMispuntos() {
+    var ventana = document.getElementById('puntuacion');
+    ventana.style.display = 'block';
 }
 
-function cerrarBonus() {
-    var popUpOvalado = document.getElementById('popUpOvalado');
-    popUpOvalado.style.display = 'none';
+function cerrarMispuntos() {
+    var ventana = document.getElementById('puntuacion');
+    ventana.style.display = 'none';
 }
 
+/* MIS DATOS */
+
+
+function mostrarMisdatos() {
+    var ventana = document.getElementById('informate');
+    ventana.style.display = 'block';
+}
+
+function cerrarMisdatos() {
+    var ventana = document.getElementById('informate');
+    ventana.style.display = 'none';
+}
