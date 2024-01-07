@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/isotipoW.png" style="height: 100%; width: auto;">
+    <title>TALSIE</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/3d1ed1057a.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <div id="envio">
+                <div>
+                    <p>ENVÍO GRÁTIS</p>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="background-color: white; color: black;">
+                            España (EUR €)
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">EE.UU
+                                    (USD $)</a></li>
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">Japan
+                                    (JPY ¥)</a></li>
+                            <li><a class="dropdown-item" style="background-color: white; color: black;" href="#">U.K
+                                    (GBP £)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="#joyas" onclick="closeMenu()" class="menuItem">JOYAS</a></li>
+                <li><a href="colecciones.html" onclick="closeMenu()" class="menuItem">COLECCIONES</a></li>
+                <li><a href="#promociones" onclick="closeMenu()" class="menuItem">PROMOCIONES</a></li>
+                <li>
+                    <div id="logo"></div>
+                </li>
+                <li><a href="#carrito" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-cart-shopping"
+                            style="color: #ffffff;"></i></a></li>
+                <li><a href="#buscar" onclick="closeMenu()" class="menuItem"><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i></a></li>
+                <li><a href="#cuenta" onclick="closeMenu()" class="menuItem">CUENTA</a></li>
+                <li><a href="favs.html" onclick="closeMenu()" class="menuItem">F<i class="fa-regular fa-star"
+                            style="color: #ffffff; background-color: transparent !important;"></i>VORITOS</a></li>
+                            
+
+            </ul>
+            <a href="javascript:void(0);" style="color: #ffffff; background-color: transparent !important;" class="hamburguer" onclick="toggleMenu()">
+                <i style="color: #ffffff; background-color: transparent !important;" class="fa fa-bars"></i>
+            </a>
+        </nav>
+     
+
+    </header>
+
+        
+    <section id="favoritos">
+        <h1>TUS FAVORITOS</h1>
+        <h4>4 productos en esta lista de deseos</h4>
+
+            <div class="listfav">
+                <div class="favart"  id="favart1">
+                    <img src="img/collarhada.png" class="rounded" alt="Marinda" >
+                    <div class="art_1">
+                        <div class="art_2">
+                            <h4>Marinda</h4>
+                            <h5>€59,95</h5>
+                        </div>
+                        <p>Collar - color plata</p>
+                        <div class="art_3">
+                            <button class="butCalc" onclick="restarCantidad('favart1')">-</button>
+                            <h2 id="canProducto1">1</h2>
+                            <button class="butCalc" onclick="sumarCantidad('favart1')">+</button>
+                            <i id="cerrar1" class="fa-regular fa-trash-can close-icon" onclick="cerrarFavart1()"></i>
+                        </div>
+                        <button type="button" class="btn btn-secondary" onclick="cerrarFavart1()">añadir a la cesta</button>
+                    </div>
+                </div>
+                <div class="favart"  id="favart2">
+                    <img src="img/collarLazo.png" class="rounded" alt="Ariantha" >
+                    <div class="art_1">
+                        <div class="art_2">
+                            <h4>Ariantha</h4>
+                            <h5>€47,95</h5>
+                        </div>
+                        <p>Collar - color plata</p>
+                        <div class="art_3">
+                            <button class="butCalc" onclick="restarCantidad('favart2')">-</button>
+                            <h2 id="canProducto2">1</h2>
+                            <button class="butCalc" onclick="sumarCantidad('favart2')">+</button>
+                            <i id="cerrar2" class="fa-regular fa-trash-can close-icon" onclick="cerrarFavart2()"></i>
+                        </div>
+                        <button type="button" class="btn btn-secondary" onclick="cerrarFavart2()">añadir a la cesta</button>
+                    </div>
+                </div>
+                <div class="favart" id="favart3">
+                    <img src="img/collarcorazon.png" class="rounded" alt="Carolie" >
+                    <div class="art_1">
+                        <div class="art_2">
+                            <h4>Carolie</h4>
+                            <h5>€82,95</h5>
+                        </div>
+                        <p>Collar - color plata</p>
+                        <div class="art_3">
+                            <button class="butCalc" onclick="restarCantidad('favart3')">-</button>
+                            <h2 id="canProducto3">1</h2>
+                            <button class="butCalc" onclick="sumarCantidad('favart3')">+</button>
+                            <i id="cerrar3" class="fa-regular fa-trash-can close-icon" onclick="cerrarFavart3()"></i>
+                        </div>
+                        <button type="button"class="btn btn-secondary" onclick="cerrarFavart3()">añadir a la cesta</button>
+                    </div>
+                </div>
+                <div class="favart" id="favart1">
+                    <img src="img/penmdientes.png" class="rounded" alt="Nixiria" >
+                    <div class="art_1">
+                        <div class="art_2">
+                            <h4>Nixiria</h4>
+                            <h5>€43,95</h5>
+                        </div>
+                        <p>Pendientes - color plata</p>
+                        <div class="art_3">
+                            <button class="butCalc" onclick="restarCantidad('favart4')">-</button>
+                            <h2 id="canProducto4">1</h2>
+                            <button class="butCalc" onclick="sumarCantidad('favart4')">+</button>
+                            <i id="cerrar4" class="fa-regular fa-trash-can close-icon" onclick="cerrarFavart4()"></i>
+                        </div>
+                        <button type="button" class="btn btn-secondary" onclick="cerrarFavart4()">añadir a la cesta</button>
+                    </div>
+                </div>
+            
+            </div>
+    </section>
+
+       
+
+  
+       
+
+
+</body>
+
+<footer>
+    <div>
+        <div id="footer_izq">
+            <div>
+                <h4>Información</h4>
+                <p>
+                    Envío y devolución</p>
+                <p>Términos y condiciones</p>
+                <p>Política de privacidad</p>
+                <p>Cuidado de joyas</p>
+                <p>Blogs</p>
+                <p>Preguntas más frecuentes</p>
+                <p>Accesibilidad</p>
+
+            </div>
+            <div>
+                <h4>Social</h4>
+                <p>Instagram</p>
+                <p>TikTok</p>
+                <p>Pinterest</p>
+                <p>Facebook</p>
+                <p>Recompensas</p>
+                <p>About Us</p>
+            </div>
+
+        </div>
+        <div id="footer_dcha">
+            <h4>Únete a la lista para obtener ofertas y actualizaciones exclusivas</h4>
+            <form>
+                <div id="mailForm">
+                    <label for="email">Indroduzca su email:</label>
+                    <input type="email" id="email" value="">
+                </div>
+                <div>
+                    <input type="checkbox" id="privacidad" name="privacidad" value="Si">
+                    <label for="privacidad">Al suscribirse, estoy de acuerdo con la Política de privacidad.</label>
+
+                </div>
+                <input id="sendButton" type="button" value="Subscríbete a nuestro newsletter " onclick="ClosePopUp()">
+            </form>
+
+        </div>
+    </div>
+</footer>
+
+</html>
+
+
