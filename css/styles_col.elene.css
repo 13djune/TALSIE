@@ -91,8 +91,8 @@ header {
 
 #sendButton:hover{
     -webkit-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
--moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+    -moz-box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
+    box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
 }
 
 #envio>div{
@@ -112,12 +112,12 @@ box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
     font-family: var(--tipoGeneral);
     background-color: transparent !important;
     position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .dropdown{
-   z-index: 11;
+    z-index: 11;
     background-color: white !important;
 }
 .dropdown>button{
@@ -200,6 +200,7 @@ a {
     transform: translateY(0);
   }
 
+  
 /* SECTIONS */
 section {
     width: 90%;
@@ -223,117 +224,6 @@ section>p {
     color: var(--colorClaro);
 }
 
-/* INTRO */
-#intro>div>h1{
-    font-family: var(--tipoFancy2);
-    color: white;
-    font-size: 4em;
-}
-#intro>div>p{
-    font-family: var(--tipoGeneral);
-    color: white;
-}
-#intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-#intro>div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-
-
-/* FOOTER */
-#contacto {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color1);
-    width: 100%;
-
-}
-
-#contacto>.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 4em 2em;
-    background-color: transparent;
-}
-
-#contacto>p {
-    text-align: center;
-    background-color: transparent;
-}
-
-#contacto>p>a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: transparent;
-}
-
-#contacto>p>a:hover {
-    color: var(--color4);
-}
-
-#contacto>.footer>div>h3 {
-    margin-bottom: 2em;
-    color: white;
-    font-size: x-large;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p {
-    margin-bottom: 1em;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p>a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: transparent;
-}
-
-#contacto>.footer>div>p>a:hover {
-    color: var(--color4);
-}
-
-.footer>div {
-    border-left: 1px solid white;
-    padding: 0 1.6em;
-    background-color: transparent;
-
-}
-
-.social {
-    background-color: transparent;
-    list-style: none;
-    padding: inherit;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 10em;
-    justify-content: space-around;
-}
-
-.social>li {
-    color: white;
-    background-color: transparent;
-}
-
-.social>li>a>i {
-    color: white;
-    background-color: transparent;
-}
-
-.social>li>a>i:hover {
-    color: var(--color4);
-
-}
 
 
 /* COLECCIÓN HELENE */
@@ -472,7 +362,7 @@ section>p {
 
 #botonCarrito {
     position: fixed;
-    top: 20px;
+    top: 210px;
     left: 20px;
     color: white;
     border: 0.5px solid;
