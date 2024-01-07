@@ -57,7 +57,7 @@
     --tipoGeneral: 'EditorialNew-UltraLight';
     --tipoFancy1: 'Sloop1';
     --tipoFancy2: 'Sloop2';
-  
+    
 }
 
 * {
@@ -198,6 +198,8 @@ box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
 #logo {
     width: 144.63px;
     height: 75.58px;
+    left: calc(50% - 177.63px/2 - 2.19px);
+    top: 113px;
     background: url(../img/Frame_5.jpg);
     background-repeat: no-repeat;
     margin: 0em 9em;
@@ -256,7 +258,7 @@ a {
 }
 .showMenu {
     transform: translateY(0);
-  }
+}
 
 /* SECTIONS */
 section {
@@ -411,7 +413,7 @@ section>p {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    }
 #joyas>div>div>h4{
    font-family: 'EditorialNew-Italic';
 }
@@ -434,6 +436,8 @@ section>p {
 #mas>i>a{
     cursor: pointer;
 }
+
+
 /* Instagram */
 #instagram{
     display: flex;
@@ -474,8 +478,8 @@ section>p {
    }
    #aboutus>div>div:nth-child(2n-1){
      
-      margin-top: 7em;
-   }
+    margin-top: 7em;
+}
 #aboutus>div>div>img{
  padding: 0em 1.5em;
  width: 15vw;
@@ -485,7 +489,7 @@ section>p {
     text-align: center;
     padding: 0.5em 1em;
 }
-  
+
 /* DUDAS */
 #dudas{
     position: fixed;
@@ -502,7 +506,7 @@ section>p {
 /* FOOTER */
 footer {
     padding: 8em 0em;
-    box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562); 
+    box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562);
 }
 footer>div {
     display: flex;
@@ -513,7 +517,7 @@ footer>div {
 #footer_izq{
     display: flex;
     flex-direction: row;
-}
+    }
 #footer_izq>div{
     display: flex;
     flex-direction: column;
@@ -537,8 +541,8 @@ footer>div {
     width: 1em !important;
     height: 1em !important;
     margin-left: 1.5em !important;
-}
-#footer_dcha> form > div > input {
+  }
+  #footer_dcha> form > div > input {
     width: 19em;
     height: 2em;
     color: rgba(255, 255, 255, 0.816);
@@ -553,7 +557,7 @@ footer>div {
     color: white;
     position: relative;
     cursor: pointer;
-    border-radius: 2em;
+  border-radius: 2em;
     padding: 0.5em;
     border-width: 1px;
     border-style: solid;
@@ -576,7 +580,7 @@ padding: 1em 0em;
 /* MEDIAQUERIES */
 @media only screen and (max-width: 1200px) {
 
-    #aboutus>div>div {
+#aboutus>div>div {
         padding: 3em 0.5em;
     }
     .sirenpic>img{
@@ -585,7 +589,7 @@ padding: 1em 0em;
 }
 
 @media only screen and (max-width: 1000px) {
-    #instagram>div {
+#instagram>div {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -732,17 +736,17 @@ div.boton > a{
 }
 
 .siren-colection>div {
-    width: 100%;
-}
+        width: 100%;
+    }
 #aboutus>div>div>p {
     font-size: 0.8em;
 
-}
+    }
 
 }
 
 @media only screen and (max-width: 600px) {
-    #joyas>div>div>img {
+#joyas>div>div>img {
         width: 42vw;
     }
  
@@ -790,7 +794,7 @@ div.boton > a{
     #footer_dcha> form > input  {
         font-size: 0.7em;
     }
-    #envio>div>p {
+        #envio>div>p {
         font-size: 0.7em;
     }
     .btn {

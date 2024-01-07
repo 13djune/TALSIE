@@ -422,9 +422,6 @@ section>p {
 
 /* lista de compras */
 
-
-
-
 #botonCarrito {
     position: fixed;
     top: 20px;
@@ -439,8 +436,6 @@ section>p {
 #botonCarrito:hover {
     opacity: 70%;
 }
-
-
 
 
 #listaCarrito {
@@ -588,9 +583,6 @@ section>p {
 }
 
 
- 
-
-
 .galeria {
     display: flex;
     justify-content: space-around;
@@ -598,11 +590,9 @@ section>p {
   }
  
   .galeria img {
-    width: 100px; /* Ajusta el tamaño según tus necesidades */
-    cursor: pointer;
+    width: 100px;
   }
  
-  /* Estilos para la lista de compra */
   #lista-compra {
     margin-top: 20px;
   }
@@ -612,78 +602,7 @@ section>p {
     padding: 0;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MEDIAQUERIES */
-@media only screen and (max-width: 1200px) {
-
-
-
-
-}
-
-
-@media only screen and (max-width: 1000px) {
-
-
-}
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 850px) {
-
-
-    #listaCarrito{
-        width: 100%;
-    }
-
-
-    .apartados_galeria > h1 {
-        font-size: 4em;
-    }
-
-
-}
-
-
-@media only screen and (max-width: 600px) {
-
-
-}
-@media only screen and (max-width: 400px) {
-
-
-    .apartados_galeria > h1 {
-        font-size: 3em;
-    }
-
-
-}
-
-
-
-
-
+/* ///////////////// */
 
 
 /* FOOTER */
@@ -871,6 +790,16 @@ padding: 1em 0em;
     #footer_izq>div {
         margin: 3em;
     }
+
+    #listaCarrito{
+        width: 100%;
+    }
+
+
+    .apartados_galeria > h1 {
+        font-size: 4em;
+    }
+
 }
 
 @media only screen and (max-width: 750px) {
@@ -911,9 +840,6 @@ padding: 1em 0em;
 }
 
 
-@media only screen and (max-width: 420px)  {
-    
-}
 
 @media only screen and (max-width: 400px) {
     h2{
@@ -937,8 +863,8 @@ padding: 1em 0em;
     .btn {
         scale: 80%;
     }
-}
 
-@media only screen and (max-width: 373px)  {
-    
+    .apartados_galeria > h1 {
+        font-size: 3em;
+    }
 }
