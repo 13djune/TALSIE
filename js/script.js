@@ -201,49 +201,77 @@ function eliminarProducto(elemento) {
 
 //FAVORITOS
 
-// $(document).ready(function(){
 
-//     $("#cerrar1").click(function(){
-//         $("#favart1").styles.attr("display none")
-//     });
+function cerrarFavart1() {
+    document.getElementById('favart1').style.display = 'none';
+}
 
-//     $("#cerrar2").click(function(){
-//         $("#favart2").styles.attr("display none")
-//     });
+function cerrarFavart2() {
+    document.getElementById('favart2').style.display = 'none';
+}
 
-//     $("#cerrar3").click(function(){
-//         $("#favart3").styles.attr("display none")
-//     });
+function cerrarFavart3() {
+    document.getElementById('favart3').style.display = 'none';
+}
 
-//     $("#cerrar4").click(function(){
-//         $("#favart4").styles.attr("display none")
-//     });
+function cerrarFavart4() {
+    document.getElementById('favart4').style.display = 'none';
+}
+
+// function restarCantidad() {
+//     var cantidadElemento = document.getElementById('canProducto');
+//     var canProducto = parseInt(cantidadElemento.innerText);
+
+//     // Resta 1 a la cantidad
+//     canProducto = Math.max(1, canProducto - 1);
+
+//     // Actualiza el contenido del elemento h2 con la nueva cantidad
+//     cantidadElemento.innerText = canProducto;
+// }
+
+// // Suma 1 a la cantidad y actualiza el contenido
+// function sumarCantidad() {
+//     var cantidadElemento = document.getElementById('canProducto');
+//     var canProducto = parseInt(cantidadElemento.innerText);
+
+//     // Suma 1 a la cantidad
+//     canProducto = canProducto + 1;
+
+//     // Actualiza el contenido del elemento h2 con la nueva cantidad
+//     cantidadElemento.innerText = canProducto;
+// }
 
 
-// });
+var canProducto1 = 1;
+var canProducto2 = 1;
+var canProducto3 = 1;
+var canProducto4 = 1;
 
-// $(document).ready(function(){
-//     $("#cerrar1").click(function(){
-//         $("#favart1").css("display", "none");
-//     });
-// });
+function restarCantidad(id) {
+    var canProducto = obtenerCantidadProducto(id);
+    canProducto = Math.max(1, canProducto - 1);
+    actualizarCantidad(id, canProducto);
+}
 
-$(document).ready(function(){
-    $("#cerrar1").click(function(){
-        console.log("Se hizo clic en #cerrar1");
-        $("#favart1").css("display", "none");
-    });
-    $("#cerrar2").click(function(){
-        console.log("Se hizo clic en #cerrar1");
-        $("#favart2").css("display", "none");
-    });
-    $("#cerrar2").click(function(){
-        console.log("Se hizo clic en #cerrar1");
-        $("#favart3").css("display", "none");
-    });
-    $("#cerrar2").click(function(){
-        console.log("Se hizo clic en #cerrar1");
-        $("#favart1").css("display", "none");
-    });
-});
+function sumarCantidad(id) {
+    var canProducto = obtenerCantidadProducto(id);
+    canProducto = Math.min(10, canProducto + 1);
+    actualizarCantidad(id, canProducto);
+}
 
+function actualizarCantidad(id, cantidad) {
+    document.getElementById('canProducto' + obtenerNumeroFavart(id)).innerText = cantidad;
+}
+
+function obtenerCantidadProducto(id) {
+    return parseInt(document.getElementById('canProducto' + obtenerNumeroFavart(id)).innerText);
+}
+
+function cerrarFavart(id) {
+    document.getElementById('favart' + obtenerNumeroFavart(id)).style.display = 'none';
+}
+
+function obtenerNumeroFavart(id) {
+    // Extraer el número del final del ID (por ejemplo, "favart2" devuelve "2")
+    return id.replace('favart', '');
+}

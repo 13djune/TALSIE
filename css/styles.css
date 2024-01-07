@@ -649,6 +649,13 @@ padding: 1em 0em;
     scale: 1.1;
 }
 
+.butCalc{
+    font-family: var(--tipoGeneral);
+    font-size: calc(1.325rem + .9vw);
+    color: rgba(255, 255, 255, 0.575);
+    border: none;
+}
+
 
 /* COLECCIÓN HELENE */
 
