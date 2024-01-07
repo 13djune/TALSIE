@@ -383,7 +383,7 @@ section>p {
 }
 
 #contacto>p>a {
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
     background-color: transparent;
 }
@@ -405,7 +405,7 @@ section>p {
 }
 
 #contacto>.footer>div>p>a {
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
     background-color: transparent;
 }
