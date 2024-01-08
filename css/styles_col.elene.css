@@ -538,6 +538,7 @@ footer>div {
     flex-direction: row;
     justify-content: space-between;
     padding: 2em;
+    margin-top: 2em;
 }
 #footer_izq{
     display: flex;
