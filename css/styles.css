@@ -164,6 +164,7 @@ box-shadow: inset 2px 2px 14px 2px rgba(255,255,255,0.7);
     left: 0;
     padding: 0.5em;
     align-items: center;
+    z-index: 10;
 }
 #envio>div>p{
     color: black;
