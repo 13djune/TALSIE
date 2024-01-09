@@ -89,6 +89,7 @@ header {
 
 
 
+
 /* ///////////////////////////// */
 
 /* MENU */
@@ -236,6 +237,28 @@ a {
     transform: translateY(0);
 }
 
+/* SECTIONS */
+section {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 3em 0;
+}
+
+section>h1 {
+    text-align: center;
+    color: var(--colorClaro);
+    font-size: 3em;
+    padding: 2em;
+    font-family: var(--tipoTitulos);
+}
+
+section>p {
+    text-align: justify;
+    margin: 1em;
+    font-family: var(--tipoGeneral);
+    color: var(--colorClaro);
+}
 
 /* ///////////////////////////// */
 
@@ -490,34 +513,26 @@ padding: 1em 0em;
 
 /* MEDIAQUERIES */
 
+@media only screen and (max-width: 1350px){
 
-
-@media only screen and (max-width: 1200px) {
-    .sirenpic>img{
-        height: 80%;
+    .favart {
+        width: 60%;
     }
-
+    
 }
 
 
 
 
-@media only screen and (max-width: 1100px) {
-    .sirenpic>img{
-        height: 70%;
-        margin-top: 20%;
-    }
 
-    #start{
-        padding: 4em 0 0 0;
-    }
+@media only screen and (max-width: 1100px) {
+
+
+
     section{
         padding: 0;
     }
 
-    #lyra, #elene, #alexia{
-        max-height: auto;
-    }
 
     footer{
         margin-top: 2em;
@@ -525,34 +540,10 @@ padding: 1em 0em;
 
 }
 
-@media only screen and (max-width: 1040px) {
-    .sirenpic>img{
-        scale: 85%;
 
-    }
-
-    #lyra, #elene, #alexia{
-        height: 55vh;
-    }
-
-    .sirenpic>img{
-        height: 95%;
-        margin-top: 0;
-    }
-
-    #start > h1{
-        font-size: 2.5em;
-    }
-}
 
 @media only screen and (max-width: 1000px) {
-    #instagram>div {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    #instagram>div>div>img {
-        margin: 1em 3em;
-    }
+    
     #footer_izq>div>h4,   #footer_dcha>h4 {
         font-size: 1em;
     }
@@ -620,66 +611,43 @@ padding: 1em 0em;
 }
 
 @media only screen and (max-width: 750px) {
-    .right-container > h2{
-        font-size: 15pt;
-    }
-    div.boton{
-        scale: 90%;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    }
-    div.boton > a{
-        align-items: center;
+
+
+    .favart {
+        width: 80%;
     }
 }
 
-@media only screen and (max-width: 640px) {
 
-
-    section#start{
-        margin: 0;
-        align-items: center;
-        width: auto;
-    }
-
-    .sirenpic{
-        height: 55vh;
-        width: auto;
-    }
-
-    section#alexia, section#lyra, section#elene{
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-    }
-
-    .siren-colection > div.right-container{
-        width: 70%;
-    }
-}
 
 @media only screen and (max-width: 600px){
     .show-menu {
         width: 50vw; 
     }
+    .favart {
+        flex-direction: column;
+    }
+
+    .art_1 {
+        width: 100%;
+    }
+    
+    #favoritos h1 {
+        padding: 2em 0em 0.3em;
+    }
 }
 
 @media only screen and (max-width: 500px){
-    .siren-colection > div.right-container{
-        width: 80%;
-    }
+
     section{
         margin-bottom: 2em;
     }
+
+    
 }
 
 
-@media only screen and (max-width: 420px)  {
-    .siren-colection > div.right-container{
-        width: 90%;
-    }
-}
+
 
 @media only screen and (max-width: 400px) {
     h2{
@@ -705,8 +673,35 @@ padding: 1em 0em;
     }
 }
 
-@media only screen and (max-width: 373px)  {
-    .siren-colection > div.right-container{
-        width: 90%;
+@media only screen and (max-width: 400px) {
+
+
+    #footer_izq>div>p {
+        font-size: 0.6em;
     }
+    #footer_izq>div>h4, #footer_dcha>h4 {
+        font-size: 0.8em;
+    }
+    #footer_dcha> form > div > input {
+        width: 13em;
+    }
+    
+    label {
+        font-size: 0.6em;
+    }
+    #privacidad {
+        width: 0.8em !important;
+        height: 0.8em !important;
+        margin-left: 1em !important;
+    }
+    #footer_dcha> form > input  {
+        font-size: 0.7em;
+    }
+    #envio>div>p {
+        font-size: 0.7em;
+    }
+    .btn {
+        scale: 80%;
+    }
+
 }
