@@ -130,6 +130,29 @@ function ClosePopUp(){
 
 
 
+function openMenu() {
+    document.getElementById("menu").lastElementChild.style.left = "0%";
+}
+
+function closeMenu() {
+    document.getElementById("menu").lastElementChild.style.left = "-110%";
+}
+
+function menu() {
+    "use strict";
+    if (document.getElementById("menu").lastElementChild.style.left === "0%") {
+        closeMenu();
+    } else {
+        openMenu();
+    }
+}
+
+        // HAMBURGUER
+        $(".hamburger").click(function() {
+            $(this).toggleClass('close');
+          });
+
+
 document.getElementById("botonCarrito").addEventListener("click", function() {
     var listaCarrito = document.getElementById("listaCarrito");
     var estadolistacarrito = listaCarrito.classList.contains("cerrado");
@@ -203,6 +226,61 @@ function realizarOperacion(operador, x, elemento) {
     cantidadElemento.textContent = x;
 }
   
+
+
+
+function closeListaCarrito() {
+    document.getElementById("listaCarrito").style.right = "-110%";
+}
+
+function closeListaCarrito() {
+    document.getElementById("listaCarrito").style.right = "-110%";
+}
+
+
+function agregarProducto(nombreProducto, imagenProducto, precioProducto) {
+    
+    var listaCompra = document.getElementById('producto_carrito');
+
+    var nuevoProductoCarrito = document.createElement('div');
+    nuevoProductoCarrito.classList.add('producto_carrito');
+  
+    
+    nuevoProductoCarrito.innerHTML = `
+      <div class="foto_productoCarrito">
+          <img id="foto_productoC" src="${imagenProducto}" alt="${nombreProducto}">
+      </div>
+      <div class="datos_productoCarrito">
+          <p id="nombre_productoC">${nombreProducto}</p>
+          <div>
+              <p>${precioProducto}</p>
+              <div class="cantidad_producto">
+                  <button onclick="realizarOperacion('-', ${x}, this)">-</button>
+                  <p id="resultado_${x}">${x}</p> 
+                  <button onclick="realizarOperacion('+', ${x}, this)">+</button>
+              </div>
+          </div>
+      </div>
+      <button onclick="eliminarProducto(this)"><i class="fa-regular fa-trash-can"></i></button>
+    `;
+  
+    
+    listaCompra.appendChild(nuevoProductoCarrito);
+}
+
+var x = 1;
+function realizarOperacion(operador, x, elemento) {
+    var cantidadElemento = elemento.closest('.producto_carrito').querySelector(`#resultado_${x}`);
+  
+    if (operador === '+') {
+      x = Math.min(10, x + 1);
+    } else if (operador === '-') {
+      x = Math.max(1, x - 1);
+    }
+  
+    cantidadElemento.textContent = x;
+}
+  
 function eliminarProducto(elemento) {
     // Eliminar el producto del carrito al hacer clic en el botón de eliminar
     var listaCompra = document.getElementById('producto_carrito');
@@ -212,7 +290,45 @@ function eliminarProducto(elemento) {
 
 
 
-        
+    
+
+/*POP UPS apartado de CUENTA*/
+
+/* PEDIDOS */
+
+function mostrarVentana() {
+    var ventana = document.getElementById('ventana');
+    ventana.style.display = 'block';
+}
+
+function cerrarVentana() {
+    var ventana = document.getElementById('ventana');
+    ventana.style.display = 'none';
+}
+
+/* PUNTOS ACUMULADOS */
 
 
+function mostrarMispuntos() {
+    var ventana = document.getElementById('puntuacion');
+    ventana.style.display = 'block';
+}
+
+function cerrarMispuntos() {
+    var ventana = document.getElementById('puntuacion');
+    ventana.style.display = 'none';
+}
+
+/* MIS DATOS */
+
+
+function mostrarMisdatos() {
+    var ventana = document.getElementById('informate');
+    ventana.style.display = 'block';
+}
+
+function cerrarMisdatos() {
+    var ventana = document.getElementById('informate');
+    ventana.style.display = 'none';
+}
 

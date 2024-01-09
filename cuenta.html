@@ -11,18 +11,22 @@
     <script src="js/script.js"></script>
     <script src="js/Chart.min.js"></script>
     <script src="https://kit.fontawesome.com/3d1ed1057a.js" crossorigin="anonymous"></script>
-    <link href="css/styles_colecciones.css" rel="stylesheet" type="text/css">
+    <link href="css/styles_cuenta.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&family=Roboto+Condensed:wght@300&display=swap"
         rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <header>
+    
         <nav id="menu">
             <div id="envio">
                 <div>
@@ -61,10 +65,9 @@
 
             </ul>
             <a href="javascript:void(0);" style="color: #ffffff; background-color: transparent !important;" class="hamburguer" onclick="toggleMenu()">
-                <i style="color: #ffffff; background-color: transparent !important;" class="fa fa-bars"></i>
-            </a>
+            <i style="color: #ffffff; background-color: transparent !important;" class="fa fa-bars"></i></a>
         </nav>
-     
+
 
     </header>
     
@@ -119,120 +122,90 @@
 
             <div class="boton">
                 <a href="col_elene.html">VER MÁS</a>
+  
+    <section id="Hello">
+        <br><br><br><br>
+        <h1>Hola María</h1>
+        <p>Aquí está todo lo que necesitas saber de tu cuenta.</p>
+        <div>
+            <div class="caja" id="mispedidos" onclick="mostrarVentana()">
+                <img src="img/mispedidos.png" alt="Mis Pedidos">
             </div>
             
-        
-        </div>
-
-    </section>
-
-    <section id="lyra" class="siren-colection">
-
-        <div class="sirenpic">
-            <img src="img/LYRa/lyra.png" alt="" class="cambio2">
-        </div>
-
-        <div class="right-container">
-            <h2>PRUEBA TU FAVORITO</h2>
-
-            <div class="container_collares container text-center">
-                <div class="row">
-
-                    <div class="col" id="lyra1">
-                        <img src="img/collares/Lyra_penmdientes.png" alt="">
-                    </div>
-
-                    <div class="col" id="lyra2">
-                        <img src="img/collares/Lyra-collar1.png" alt="">
-                    </div>
-
-                    <div class="col" id="lyra3">
-                        <img src="img/collares/lyra-collar3.png" alt="">
-                    </div>
-
+            <div class="ventana" id="ventana">
+                <div class="ventana-content">
+                    <span class="close" onclick="cerrarVentana()">&times;</span>
+                    <h1>HISTORIAL DE PEDIDOS</h1>
+                    <h3>Aún no tienes pedidos :(</h3>
                 </div>
-
-                <div class="row">
-                        
-                    <div class="col" id="lyra4">
-                        <img src="img/collares/lyra-penmdientes2.png" alt="">
-                    </div>
-
-                    <div class="col" id="lyra5">
-                        <img src="img/collares/lyra-collra2.png" alt="">
-                    </div>
-
-                    <div class="col" id="lyra6">
-                        <img src="img/collares/lyra-penmdientes3.png" alt="">
-                    </div>
-                        
-                </div>
-
             </div>
 
-            <div class="boton">
-                <a href="">VER MÁS</a>
+            <div class="cartera" id="puntosacumulados" onclick="mostrarMispuntos()">
+                <img src="img/puntosacumulados.png">
             </div>
+
+            <div class="puntuacion" id="puntuacion">
+                <div class="ventana-content">
+                    <span class="close" onclick="cerrarMispuntos()">&times;</span>
+                    <h1>PUNTOS ACUMULADOS</h1>
+                    <h2>
+                        <i>
+                            "350 puntos"
+                        </i>
+                    </h2>
+
+                    <input id="sendButton" type="button" value=" obten tus beneficios " onclick="cerrarMispuntos()">
+
+                    <br>
+
+                    <p>Te quedan 84 puntos para ser <i>GOLD</i></p>
+
+                </div>
+            </div>
+
+            <div class="listado" id="misdatos" onclick="mostrarMisdatos()">
+                <img src="img/misdatos.png">
+            </div>
+
+            <div class="informate" id="informate">
+                <div class="ventana-content">
+                    <span class="close" onclick="cerrarMisdatos()">&times;</span>
+
+                    <form id="formDatos">
+                        <p>TUS DATOS</p>
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Lucía" />
             
-        
-        </div>
-
-    </section>
-
-    <section id="alexia" class="siren-colection">
-
-        <div class="sirenpic">
-            <img src="img/ALEXIA/alexia0.png" alt="" class="cambio3">
-        </div>
-
-        <div class="right-container">
-            <h2>PRUEBA TU FAVORITO</h2>
-
-            <div class="container_collares container text-center">
-                <div class="row">
-
-                    <div class="col" id="alexia1">
-                        <img src="img/collares/collaresalexia/collar3.png" alt="">
-                    </div>
-
-                    <div class="col" id="alexia2">
-                        <img src="img/collares/collaresalexia/collar6.png" alt="">
-                    </div>
-
-                    <div class="col" id="alexia3">
-                        <img src="img/collares/collaresalexia/earcuff2.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="row">
-                        
-                    <div class="col" id="alexia4">
-                        <img src="img/collares/collaresalexia/pendientes5.png" alt="">
-                    </div>
-
-                    <div class="col" id="alexia5">
-                        <img src="img/collares/collaresalexia/collar2.png" alt="">
-                    </div>
-
-                    <div class="col" id="alexia6">
-                        <img src="img/collares/collaresalexia/alexia1.png" alt="">
-                    </div>
-                        
-                </div>
-
-            </div>
-
-            <div class="boton">
-                <a href="">VER MÁS</a>
-            </div>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Pérez Martinez" />
             
-        
-        </div>
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fechaNacimiento" name="01/02/2002" />
+            
+                        <label for="pais">País:</label>
+                        <input type="text" id="pais" name="pais" placeholder="España" />
+            
+                        <label for="telefono">Número de Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 658 393 233" />
+            
+                        <button type="button" onclick="cerrarMisdatos()">Guardar</button>
+                    </form>
 
+                </div>
+            </div>
+
+
+        </div>
     </section>
 
-        <footer>
+
+    <div id="dudas">
+        <p>¿dudas? chateemos</p>
+    </div>
+
+
+    <footer>
         <div>
             <div id="footer_izq">
                 <div>
@@ -276,5 +249,6 @@
             </div>
         </div>
     </footer>
-    
 </body>
+
+</html>
