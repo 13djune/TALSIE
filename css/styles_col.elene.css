@@ -604,27 +604,101 @@ padding: 1em 0em;
     flex-direction: column;
 }
 
-/* ///////////////// */
-
-
-
-
-
 /* MEDIAQUERIES */
-@media only screen and (max-width: 1200px) {
 
+@media only screen and (max-width: 1100px) {
+    
+    #start{
+        padding: 4em 0 0 0;
+    }
 
+    section{
+        padding: 0;
+    }
+
+    footer{
+        margin-top: 2em;
+    }
+
+}
+
+@media only screen and (max-width: 1040px) {
+    
+    #start > h1{
+        font-size: 2.5em;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-
+    #instagram>div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #instagram>div>div>img {
+        margin: 1em 3em;
+    }
+    #footer_izq>div>h4,   #footer_dcha>h4 {
+        font-size: 1em;
+    }
+    #footer_izq>div>p {
+        font-size: 0.8em;
+    }
+    label{
+        font-size: 0.8em;
+    }
+    #footer_dcha> form > input {
+        font-size: 0.8em;
+    }
+    #logo {
+        margin: 0em 1em;
+    }
 }
 
 
+@media only screen and (max-width: 850px){
+    .hamburguer{
+        display: block;
+        position: fixed;
+        top: 5em;
+        right: 1em;
+        margin: 1em;
+        cursor: pointer;
+        z-index: 20;
+    }
+   .menu{
+       display: none; 
+      
+   }
+    .menuItem{
+       float: none;
+       display: block;
+       text-align: right;
+    }
+   
+   .show-menu {
+       display: flex;
+       position: fixed;
+       right: 0;
+       left: auto;
+       width: 35vw;
+       height: 75vh;
+       flex-direction: column;
+       padding: 3em;
+       box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.562);
+   }
 
+   footer {
+        padding: 1em 0em;
+    }
 
+    footer>div {
+        flex-direction: column;
+        align-items: center;
+    }
 
-@media only screen and (max-width: 850px) {
+    #footer_izq>div {
+        margin: 3em;
+    }
 
     #listaCarrito{
         width: 100%;
@@ -633,14 +707,68 @@ padding: 1em 0em;
     .apartados_galeria > h1 {
         font-size: 4em;
     }
+}
+
+@media only screen and (max-width: 750px) {
+    .right-container > h2{
+        font-size: 15pt;
+    }
+    div.boton{
+        scale: 90%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    div.boton > a{
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    section#start{
+        margin: 0;
+        align-items: center;
+        width: auto;
+    }
 
 }
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 600px){
+    .show-menu {
+        width: 50vw; 
+    }
 }
+
+@media only screen and (max-width: 500px){
+    section{
+        margin-bottom: 2em;
+    }
+}
+
+
 @media only screen and (max-width: 400px) {
+    h2{
+        justify-content: center;
+    }
 
+    label {
+        font-size: 0.6em;
+    }
+    #privacidad {
+        width: 0.8em !important;
+        height: 0.8em !important;
+        margin-left: 1em !important;
+    }
+    #footer_dcha> form > input  {
+        font-size: 0.7em;
+    }
+    #envio>div>p {
+        font-size: 0.7em;
+    }
+    .btn {
+        scale: 80%;
+    }
     .apartados_galeria > h1 {
         font-size: 3em;
     }
